@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+</head>
+<body>
+    
+    <h1 align="center"><b><u>Login Form</u></b></h1><br><br>
+
+<form action="" align="center">                                                         <!-- ithu form aagaiyal form enum tag itkul ida vendum-->
+
+    <p>
+        User Name: <br> <input type="text" name="Username" placeholder="User Name">        
+    </p>                                                                                <!-- name itkul ivvaru username , password kodukka karanam database ithai find pannuvathatku -->
+                                                                                        <!-- space illamal type pannavendum bcz ithu database udan sampanthappattathu-->
+
+    <p>
+        Password: <br> <input type="text" name="Password" placeholder="Password">         
+    </p>
+                                                                                         <!-- placeholder ida kaaranam athil idum input box itkul show aaagum-->
+
+</form>
+
+<br><br><hr><br><br>
+
+<form action="" align="center">                                                         <!-- 2 times usename , password ketka thevaiyillai-->
+                                                                                        <!-- paragraph tag thevaiyillai athatkaana thevai ingu illai-->
+
+        <input type="text" name="Username" placeholder="User Name" size="40" maxlength="10" value="Admin">        
+                                                                            
+<br><br>                                                                                       <!-- maxlength mean athatku mel type panna mudiyathu-->
+                                                                                               
+        <input type="password" name="Password" placeholder="Password" size="40" maxlength="5"> 
+                
+                                                                            <!-- input type il password entru type pannal pssword type pannumpothu hide aahi varum dot (.) il varum-->
+</form>                                                                     <!-- value il ida kaaranam some software il default aaga username- admin entrum , password 123 entrum irukum-->
+
+
+<br><br><hr><br><br>
+
+<form action="" align="center">   
+                                                                                         
+
+        <input type="text" name="Username" placeholder="User Name" size="20" maxlength="10">     
+                                                                            
+<br><br>                              
+                                                                                               
+        <input type="password" name="Password" placeholder="Password" size="20" maxlength="5"> <br><br>
+        <input type="submit" name="login" value="Log In">                                  
+                                                                             <!-- submit mean 2um input panni enter koduppathatkuthan submit botten use pannuvom--> 
+>
+</form>       
+
+
+<br><br><hr><br><br>
+
+<form method="post" action="" align="center">                   <!--- method="post" ida kaaranam melulla code il usrnme , pwd type pannal antha url il ilahuvaaga parkka mudium -->
+                                                                 <!-- melum ilahuvaga hack panna mudium so athai hide panna post method poduvom -->                         
+
+        <input type="text" name="Username" placeholder="User Name" size="30" maxlength="10">     
+                                                                            
+<br><br>                              
+                                                                                               
+        <input type="password" name="Password" placeholder="Password" size="30" maxlength="5"> <br><br>
+        <input type="submit" name="login" value="Log In">                                  
+                                                                
+        <br><br><br>
+
+        <textarea name="Comments" placeholder="Comments" id="" cols="40" rows="5"></textarea>
+                                                                   <!-- twxterea idak kaaranam comments ,feed -->
+>
+</form>                                                      
+
+</body>
+</html>
