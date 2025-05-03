@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+</head>
+
+
+<body>
+    
+
+    <h1><b><u><center>Student Application Form</center></u></b></h1><br><br>  
+
+    <form method="post" action="" align="center" enctype="multipart/form-data">    <!-- enctype ida reasn naam upload pannum data athe formet il  database ku varum -->
+   
+    
+    <p>
+        Full Name: <br>
+        <input type="text" name="name" size="30">
+    </p>
+           
+
+            
+    <p>
+        Email: <br>
+        <input type="email" name="email"  size="30"> 
+    </p>
+    
+
+    <p>
+        Genter: <br><br>
+        <input type="radio" name="Genter" value="male" checked> Male      <!-- radio ida reason option select panna like male or female-->
+        <input type="radio" name="Genter" value="female"> Female          <!-- name il veru veru name koduththal name male ,female 2ium select panna mudium so commen aaga koduka vendum-->
+    </p>                                                                  <!-- reason for cheaked. defualt aaha male il click il irukkum-->
+                                                                          <!-- value il male female kodukka kaaranam => url il naam select panniyathu kattum & database itku-->
+          
+     <p>
+        Date Of Birth: <br><br> 
+        <input type="date" name="DOB">                                    <!-- DOB => html5 default calanter-->
+     </p>
+
+     <p>
+        Certificate: <br>
+        <input type="file" name="Certificate">                            <!-- type="file" => file upload -->
+     </p>
+
+    <p>
+        Courses: <br>
+        <input type="checkbox" name="Courses" value="software engineering"> software engineering <br>                      <!-- cheakbox for => multiple select-->
+        <input type="checkbox" name="Courses" value="Web development"> Web development <br>
+        <input type="checkbox" name="Courses" value="Network engineering"> Network engineering <br>
+        <input type="checkbox" name="Courses" value="Hacking"> Hacking <br>
+    </p>
+
+
+    <p> courses: <br>                                                      <!-- padiththa silathil pala code kal onru front end kum matayathu database kum sellum -->
+        <select  size="5" name="courses" multiple>                         <!-- idhu database kkana courses ; multiple kkana reason ore neraththil pala course select panna (ctrl + click)-->
+                                                                           <!-- select edukka karanam pala options inai select panna-->
+        <option value="software engineering"> software engineering </option>
+        <option value="software engineering"> Web development </option>
+        <option value="software engineering"> software engineering </option>
+        <option value="software engineering"> Hacking </option>
+        <option value="software engineering"> bussiness managment </option>
+        <option value="software engineering"> hardware engineering </option>
+        <option value="software engineering"> it managment </option>
+        <option value="software engineering"> Bit programm </option>
+        <option value="software engineering"> Fit programm </option>
+        <option value="software engineering"> accounting </option>
+
+        </select>
+    </p>
+    
+    <p>
+        Address: <br>
+        <textarea name="Address" name="Address" cols="30" rows="10" id=""></textarea>
+    </p>                         
+
+ 
+    <p>
+        <input type="submit" name="submit" value="Submit">
+    </p>
+                                                     
+
+</form>
+
+</body>
+</html>
