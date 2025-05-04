@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>students application</title>
+</head>
+
+<body>
+    
+
+        <h1><b><u><center>Student Application Form</center></u></b></h1><br><br>  
+    
+    <form method="post" action="Project 22 (Form Design).html" enctype="multipart/form-data" align="left">     
+       
+           <!--################  ithilulla align, center ,background , red color il iukkum ellamp[] css il varavndiyathu athai duplicated attribute enpar ################-->
+        
+
+<fieldset>                                                          <!--fieldset kodukka reason ovvoru particular field kkul irukkum-->
+
+    <legend><h3>Login Information</h3></legend>
+
+<table cellspacing="5px" cellpading="5px">
+
+    <tr>
+        <td><label  for="nm">Full Name :</label></td>                <!-- form il advance future add panna lable use pannuvom, lable mainly only for (blind peoples)-->
+        <td><input type="text" name="name" size="30" id="nm"> </td>
+    </tr>
+
+    <tr>
+        <td><label for="emai">Email :</label></td>                          <!-- tr ,td poda kaaranam imoontrum ore nerukku varuvathatku-->            
+        <td><input type="email" name="email"  size="30"  id="emai"></td>   
+    </tr>
+
+    <tr>
+        <td><label for="pwd">Password :</label></td>
+        <td><input type="password" name="password" size="30" id="pwd"></td>
+    </tr>
+ 
+    <label for="a">Age :</label>
+    <input type="age" name="age" size="30" id="a">
+
+</table>  <br>  
+           
+    
+</fieldset> <br>
+
+    <!--#########################################################################################################################################-->
+    
+         
+    
+
+<fieldset>
+
+    <legend><h3>Prsonal Information</h3></legend>
+    
+    <p>
+        <label for="">Genter:</label> 
+        <input type="radio" name="Genter" value="male"  id="gen"> <label for="gen">Male </label>      
+        <input type="radio" name="Genter" value="female" id="gen"checked > <label for="gen">Female</label>           
+    </p>                                                                 
+             
+          
+     <p>
+        <label for="db">Date Of Birth:</label>
+        <input type="date" name="DOB" id="db">                              
+     </p>
+
+
+     <p>
+        <label for="add">Address:</label>
+        <textarea name="Address" name="Address" cols="30" rows="10" id="add"></textarea>
+    </p>                         
+</fieldset><br>
+    
+    <!--#########################################################################################################################################-->
+
+
+<fieldset>
+
+    <legend><h3>Educational Information</h3></legend>
+
+    <p>
+        <label for="crt">Certificate:</label>
+        <input type="file" name="Certificate" id="crt">                        
+     </p>
+
+
+     <p>
+        <label for="">Courses:</label> <br>
+        <input type="checkbox" name="Courses" value="software engineering" id="soft"> <label for="soft">software engineering</label> <br>  <!--id eduththu athil ethai type pannuhiromo-->                    
+        <input type="checkbox" name="Courses" value="Web development" id="web"> <label for="web">Web development</label> <br>              <!--athai for il type panna vendum-->
+        <input type="checkbox" name="Courses" value="Network engineering" id="net"> <label for="net">Network engineering</label> <br>
+        <input type="checkbox" name="Courses" value="Hacking" id="hack"> <label for="hack">Advanced Hacking</label> <br>
+    </p>                                                                                           
+                                        <!--course select pannumpothu box kkul tick panna thevaiyillai antha word ilye tick panlam-->
+
+</fieldset><br>
+
+    <!--#########################################################################################################################################-->
+    
+        <p> <label for="">courses:</label> <br>                                                  
+            <select  size="5" name="courses" multiple>                       
+                                                                         
+            <option value="software engineering"> software engineering </option>
+            <option value="software engineering"> Web development </option>
+            <option value="software engineering"> software engineering </option>
+            <option value="software engineering"> Hacking </option>
+            <option value="software engineering"> bussiness managment </option>
+            <option value="software engineering"> hardware engineering </option>
+            <option value="software engineering"> it managment </option>
+            <option value="software engineering"> Bit programm </option>
+            <option value="software engineering"> Fit programm </option>
+            <option value="software engineering"> accounting </option>
+    
+            </select>
+        </p>
+        
+    <!--#########################################################################################################################################-->
+
+     
+        <p>
+            <input type="submit" name="submit" value="Submit">
+        </p>
+                                                         
+    
+    </form>
+    
+    </body>
+</html>
