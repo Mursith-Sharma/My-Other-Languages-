@@ -1,0 +1,62 @@
+h1
+{
+    color: rgb(122, 40, 2);                                     /* you can upload color*/
+    text-align: center;                                   /*this is only tetx center so border center il illai*/
+    border: #4b0294 double 3px;                        /* border work aagavendumanal im 3um kodukka vendm 1.color, 2.border size, 3.border type*/
+    width: 800px;                                         /*boder in ahalam*/
+    margin: 0 auto;                                       /*auto kodukka reason entha siriya size display il paththalum border cwnter il irukum display size kku etratpol adjust agum*/
+    margin-top: 200px;                                    /*top ilirunthu 200px keele edukka*/
+    padding: 15px;                                        /*box kum word kumidaiyilana space*/
+    font-size: 50px;
+    border-radius: 15px;                                  /*radius mean - valaivu*/
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;     /*4 font vara kaaranam ella device ilum ella font um irukkathu so 1 font illati matraya font work aagum. 
+                                                                                      entha font um illa vittal default aana font ileye irukkum */
+    font-family: 'Cascadia Mono';                         /*or/you can upload your favorite font (get from google font)*/
+}
+
+h2
+{
+    border: #9b0404 double 3px;
+    text-align: center;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 30px;
+    font-family: "Cascadia Mono", sans-serif;              /*ithuthan professional method to upload font 1. go to google font 2.copy font empeded code 3.past that link to html 4.copy that css font family
+                                                             paste in css like this.. ivvaru font upload pannal internet use pannum ellarum antha font inai parkka mudium */
+
+}
+
+h3
+{
+    border: #9b0404 double 3px;
+    text-align: center;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 30px;
+    font-family: 'Josefin Sans', sans-serif !important; 
+}
+
+body
+{
+    background-color: #c8c7c9;                                             
+    background: url(../images/mountain-9278324_1280.jpg) no-repeat center fixed;   
+    background-size: cover;
+}
+
+i
+{
+    color: #ecfc11;
+    size: 30px;
+}
+
+ /* 
+ muthalil naam css folder inai vittu veliye vanthu pin images folder il ulla image inai select panna vendum.
+ oru image pala thadavairepeat aagamal irukka (no repeat) , naduvila kondu vara (center), naduvil irunthalthan align panlam
+ background enpathu property , matrayathu values.
+ after fixed (full image um home il irukkum
+ cover kodukka kaaranam background il full aaha cover aagum
+ */
