@@ -1,0 +1,86 @@
+body
+{
+    background:url(images/carrot-4343497_1920.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+div
+{
+    background-color: rgba(206, 190, 172, 0.274);                 /*background in color matra (ackground-color:), text itku color maatra (color:) */
+    align-content: center;                                          /*opacity 100% enin transparant 0% , transperant 100% enin opacity 0% so naam */
+    color: rgb(238, 223, 9);                                      /*opacity i kuraikka antha black i select panni kuraikkalam*/
+    width: 16%;                                                     /*black box in width inai kuraikka*/
+
+    margin: auto;                                                   /*ella device ilum auto aaha rsponsible view il irukkum*/
+    margin-left: 1510px;
+    margin-top: 60px;
+
+    text-align: center;
+    border-radius: 15px;
+    padding: 0 10px;                                                /*muthalil ull 0 top & bottom kkanathu , matrayathu left & right kkanathu*/
+    
+    box-shadow: 1px 6px 6px -1px rgba(0,0,0,0.97);               /*css shadow generator (ivvaru seivathentral ethavathu 2 side maththirame mudium*/
+    text-shadow: 2px 0px 5px #000000;                            /*text kkana shadow*/
+
+}
+
+select
+{
+    text-align: center;
+    width: 220px;
+    height: 23px;
+    background-color: rgba(81, 240, 240, 0.623);
+    border-radius: 6px;
+    color: rgb(39, 3, 201);
+    border: rgb(0, 0, 0) 1px solid;
+    cursor: pointer;                                               /*mouse inai kondu sellumpothu hand mark kattum*/
+}
+
+input                                                              /*ithil input edit pannal html ilulla 3 input um edit aagum so thaiyaga edit pana vendumentral 2 vali undu*/
+{                                                                  /* 1. inline css method 2. id selector method / class selector method (ithatku html il id eduththu seiya vendum*/
+    text-align: center;
+    width: 220px;
+    height: 20px;
+    background-color: rgba(81, 240, 240, 0.623);
+    border-radius: 6px;
+    color: rgb(39, 3, 201);
+    border: rgb(0, 0, 0) 1px solid;
+}
+
+#easy                                                               /*ivvaruthan id select panni edit pannuvathu but class selector mantation panna (.) ida vendum*/     
+{
+    background-color: #abf00a;
+}
+
+textarea
+{
+    text-align: center;
+    width: 220px;
+    height: 100px;
+    background-color: rgba(81, 240, 240, 0.623);
+    border-radius: 6px;
+    color: rgb(39, 3, 201);
+    border: rgb(0, 0, 0) 1px solid;
+}
+                                                                     /*ingu select & input & textarea imoontrukkum same coding aakaiyal ithai innoru valiyil easy aaga seiyalam*/
+button                                                               /*html il 3kkum ore id ittu css il call pannal pothum 3um change aahum 3 coding thevaiyillai */
+{                                                                    /*oru code il pala id or pala class use panni edit panlam*/
+    text-align: center;
+    font-family: "Abril Fatface", serif;
+    width: 80px;
+    height: 28px;
+    margin-bottom: 20px;
+    background-color: rgba(10, 10, 10, 0.822);
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    border: rgb(238, 224, 32) 1px solid;
+    text-transform: uppercase;                                      /*text inai lower or uppercase kku matralam*/
+    cursor: pointer;
+    transition:1s ease-in;                                         /*website on aanapin varum animation & athatkuriya time um set panna vendum*/
+}
+
+button:hover                                                       /*mouse kondu sellumpothu effect kattum*/
+{
+    font-weight: 1000;
+    box-shadow: 0px 0px 5px 3px inset #abf00a;                  /*insert koduththal ulle antha effect varum kodukkamalum vidalam*/
+}
