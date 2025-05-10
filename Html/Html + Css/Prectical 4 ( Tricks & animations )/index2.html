@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tricks 2</title>
+</head>
+<style>                                            /*main position => 1.absolute, 2.relative, 3. fixed*/
+
+        /*###################################################        Positions              ########################################################################*/
+
+            .box
+        {
+            height: 200px;
+            width: 200px; 
+            background-color: rgb(99, 49, 238);
+            position: absolute;                      /*1st ku absolute position koduththal black paper mithakkum athanal green paper athatkul sorukikkollum*/
+        }
+            .box1
+        {
+            height: 100px;
+            width: 100px; 
+            background-color: rgb(61, 255, 71);
+            position: fixed;                            /*2kkum absolute koduththal 2nd box than meele mithakkum ; so pothuvaaga ellarum relative position koduppar athu ontren keel ontru varum*/
+            transition-delay: 200ms;                    /*mouse kondu pona pin 0.5 s il transtion start aagum*/
+            transition-duration: 2s;                    /*antha transition 2s kku nadakum*/
+            transition-timing-function: linear;         /*animation type*/
+            transition-property: height;                /*athu height il nadakkum*/
+        }
+
+        .box1:hover                                     /*mouse arukil kondu sellumpothu animation varavendumaathalal hover iduvom*/
+        {
+            height: 500px;                              /*antha hight size for animation*/               
+        }
+
+
+
+
+
+
+        .box2
+        {
+            height: 100px;
+            width: 100px; 
+            margin-left: 300px;
+            background-color: rgba(255, 83, 15, 0.521);
+            transition-delay: 500ms;                    
+            transition-duration: 1s;                    
+            transition-timing-function: linear;                    
+            transition-property: all;                      /*ithatku All il veithiruppathu nallam left or top ..etc matra vendumentral hover il maatruvathu nallam*/      
+        }
+        .box2:hover                                  
+        {                            
+            /*transform: translateX(400px);*/               /*x achchil move aagum; ithil translate z ,3d ivvirandum use panna mudiyathu*/            
+            /*transform: translate(400px 400px);*/         /*ivvaru x,y irandukkum use panlam*/
+             /* transform: rotate(120deg); */              /*deg - degree*/
+             /* transform: skew(90deg); */
+             /*transform: scale(2); */                     /*2 mean - 200 pixels*/
+             background: url(carrot-4343497_1920.jpgs);
+             background-size: cover;
+             transform: scale(4);
+
+        }
+
+        /*############################################     Animation       #############################################################################*/
+
+        .box3
+        {
+            height: 100px;
+            width: 100px; 
+            margin-left: 500px;
+            background-color: rgba(167, 5, 45, 0.521);
+
+          /*animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state];       <<-- syntex*/    
+          /* 2 valikalil animation input idalam */
+          
+           /* 
+           1)
+           animation-name: myanimation;
+           animation-duration: 2s;
+           animation-timing-function: ease-in;
+           animation-iteration-count: infinite;
+            */
+
+        /* 2) animation: myanimation 2s ease-in infinite; */
+        }
+
+        @keyframes myanimation
+        {
+            0%{
+
+            }
+            50%{
+                border-radius: 50%;
+                background-color: aquamarine;
+            }
+            100%{
+                border-radius: 50%;
+                background-color: coral;
+            }
+
+
+
+        /* ######################################################################################################################################################*/
+            
+        }
+
+
+
+
+</style>
+<body>
+    
+<div class="box">
+
+</div>
+
+<div class="box1">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique tempora officia possimus incidunt dolore blanditiis facilis quae accusantium. Quam eveniet earum at ipsam eum, expedita hic sit deserunt inventore nostrum architecto exercitationem laudantium rerum veniam placeat voluptatum iusto dolorem provident quod officia alias. Quae, officiis quibusdam, laudantium, commodi quisquam dolorem dignissimos fuga quas asperiores veritatis cumque! Obcaecati culpa, tempora fuga labore accusantium quia minus aspernatur. Culpa saepe corporis cupiditate, ab excepturi ipsam aperiam. Tenetur laudantium ad, nobis commodi velit fugit, sequi reiciendis neque qui nihil nostrum blanditiis doloribus nulla nisi voluptates optio harum saepe temporibus possimus rem, veritatis mollitia? Praesentium nisi quae doloribus necessitatibus tempora architecto quam minima odit deleniti rem, voluptas, in similique rerum quibusdam consequatur quaerat provident enim porro asperiores illo laborum quidem! Minima vel exercitationem autem nam praesentium dolores officia iusto, voluptate explicabo molestiae. Ullam, ipsum! Sed perspiciatis molestias iure tempora ab fugiat voluptas officiis, quis culpa minima, libero fugit ex sapiente odio explicabo. Quis ea provident, incidunt iure asperiores harum consequatur sed quas perferendis delectus sapiente commodi voluptas dolorem quaerat, quo at in. Sed reiciendis unde quae delectus maxime, perferendis placeat harum repudiandae recusandae ipsa eaque incidunt cupiditate provident impedit perspiciatis sapiente dignissimos inventore. Voluptatibus praesentium, pariatur et quia ducimus nemo sequi, explicabo recusandae dolor architecto id earum quo beatae enim sed? Sed maxime dolor corrupti adipisci, similique fugiat qui at est quisquam quam, perspiciatis amet sapiente illo ipsa labore soluta quos voluptatibus? Officiis consequatur ratione dolorum id omnis ipsum, quaerat laudantium reiciendis nam, incidunt amet perferendis sequi dignissimos obcaecati veritatis quae illum aspernatur aliquid, neque maxime earum nihil blanditiis quis. Accusantium deleniti nostrum qui sequi distinctio eius animi, quasi ipsa, harum, nemo assumenda cupiditate dolorem nulla quis id impedit voluptates facilis doloremque repellendus repellat iste saepe corporis voluptatum? Molestiae voluptate tenetur labore inventore dolores incidunt consequatur, quibusdam optio itaque repellendus odit similique perferendis doloremque repudiandae rem vitae omnis beatae qui? Doloremque suscipit a ducimus molestias velit perferendis odio tempora et. Architecto, maiores ducimus adipisci eligendi porro asperiores similique ut quam at! Quasi itaque aperiam, recusandae ipsam necessitatibus aliquam nam ipsum laudantium amet ducimus fuga provident cumque quia sequi qui quis tempore error architecto! Rem tempora earum vero. Esse error dolores beatae suscipit voluptates minima voluptas aliquam dolorum! Numquam sit eum obcaecati, voluptatum sunt impedit corporis expedita maxime quaerat, ducimus consequuntur facilis quidem perspiciatis earum nostrum molestias, at excepturi sapiente culpa rem corrupti quisquam aperiam. Facilis alias inventore hic impedit exercitationem a natus assumenda dolores accusamus dicta quia, maxime optio vel minus non corporis perspiciatis nihil autem, voluptatum error laudantium harum corrupti. Sapiente, odit? Commodi, nostrum repellendus debitis laborum quaerat explicabo natus cupiditate accusantium consequuntur maiores nihil eaque expedita aut, est, repellat culpa eius magnam sed ut reprehenderit labore ipsa officiis iusto! Quis excepturi distinctio modi fugiat officia cumque non. Facere non, numquam modi architecto animi odio laborum, iusto optio impedit sunt expedita? Odio nulla quo expedita architecto dolor alias quidem quasi libero? Necessitatibus ut maiores facilis officia culpa suscipit. Saepe quam cumque animi minima laboriosam.
+    
+
+</div>
+
+<div class="box2">
+
+</div>
+
+<div class="box3">
+
+</div>
+
+</body>
+</html>
