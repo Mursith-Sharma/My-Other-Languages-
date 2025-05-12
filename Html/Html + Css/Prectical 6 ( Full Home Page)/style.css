@@ -1,0 +1,249 @@
+.header
+{
+    width: 1950px;                /*muthalil eppothum width , height , bg color kodukka vendum appothuthan athatkuriya amaividam , size enpavatrai paarkka mudium*/
+    height: 100px;                /*oru content um illamal width or height kku % il koduppathusometime varathu*/
+    background-color: #19459D;
+
+}
+
+body                               /*pothuvaga body kku default aana margin irukkum athanal 2side um gap irukkum so athai 0 aaka vendum*/
+{
+    margin: 0px;
+}
+
+.header h2                         /*school of information technology*/
+{
+    color: white;
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 37px;
+}
+
+.header p
+{
+    position: absolute;
+    color: white;
+    margin-left: 1530px;
+    margin-top: 45px;
+    padding: 22px;8
+}
+
+.header p span
+{
+    margin-left: 15px;            /*2 kkumidaiyilana space*/
+}
+
+.header p i
+{
+    margin-right: 5px;            /* icon kum letter kumidaiyilana space ; vertical aaga top & bottom il align pannum*/
+    vertical-align: -3px;
+}
+
+.header h2 i
+{
+    margin-left: 20px;            /*header in icon*/
+}
+
+.container
+{
+    width: 90%;
+    margin: 0 auto;              /*ivvaru koduththal ella side um auto aga set aagum margin left&right&bottom ippadi thani thaniyagavum kodukkalam*/
+}
+
+.div1
+{
+    width: 100%;                  /*container il 90% iruppathal ithil 100% ittal athai thandi veliye pogathu*/
+    height: 110px;
+    background-color: rgb(251, 255, 39);
+}
+
+.div1 img
+{
+    height: 100%;
+    width: 120px;
+}
+
+.div1 ul
+{
+    float:right;                /*full menu um right side il irukkum*/
+}                                /*list style ithatkum kodukkalam*/
+
+.div1 ul li a 
+{
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 30px;
+  display: inline-block;
+}
+
+
+.div1 ul li
+{
+    list-style: none;
+    float: left;               /*order ivvaru irukum --> HomeAbout UsServicesTermsContact Us*/
+    padding: 25px 60px;        /* top & bottem , left & right*/
+}
+
+.div1 img 
+{
+    margin-left: 40px;
+}
+
+.div1 ul li:hover
+{
+    background-color: rgba(233, 75, 172, 0.726);
+    border-radius: 13px;
+    transform: translateY(-5px); /* moves item up */
+    transition: all 0.3s ease;
+}
+
+.div2
+{
+    width: 100%;
+    height: 650px;
+}
+
+.div2 img
+{                          /*naam already div2 kku width & height set pannathal ingu 2kkum 100% koduththal pothum*/
+    height: 100%;
+    width: 100%;
+}
+
+.div3 
+{
+    height: 800px;
+    width: 100%;
+}
+
+.one                      /* 100% intha size il 3 aaga udaikka vendum udaiththal 33.33% and gap vendumaahaiyal (gap kku 2% um box kku 32%) kodukka vendum ivvaruthan calculate panna vendum */
+{
+    width: 31%;                     /*ontrukku keele ontraga immoontrum varum athai float use panni side il edukka vendum*/
+    height: 100%;
+    background-color: rgba(230, 92, 42, 0.781);
+    margin-top: 80px;
+    border-radius: 70px;
+    float: left;
+    margin-right: 3.5%;
+}
+
+.two
+{
+    width: 31%;
+    height: 100%;
+    background-color: rgba(114, 51, 214, 0.774);
+    margin-top: 80px;
+    border-radius: 70px;
+    float: left;
+}
+
+.three
+{
+    width: 31%;
+    height: 100%;
+    background-color: rgba(224, 55, 168, 0.726);
+    margin-top: 80px;
+    border-radius: 70px;
+    float: right;
+}
+
+
+#one1                         /*orupothum tag inai mattum mantation panni edit panna kodathu bcz pala html file il ore tag use pannuvom so clss use pannuvathu nallam*/
+{
+    color: white;
+    text-align: center;
+    font-size: 47px;
+}
+
+#onep
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: justify;
+    margin: 25px;
+    font-size: 22px;                 
+    margin-bottom: 50px;               /* paragraph kkum bottun kkumidaiyilaana space edukka ithatku padding bottom um kodukkalam*/
+}
+
+
+
+#two2                        
+{
+    color: white;
+    text-align: center;
+    font-size: 47px;
+}
+
+#twop
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: justify;
+    margin: 25px;
+    font-size: 22px;
+    margin-bottom: 77px;
+}
+
+
+
+#three3                       
+{
+    color: white;
+    text-align: center;
+    font-size: 47px;
+}
+
+#threep
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: justify;
+    margin: 25px;
+    font-size: 22px;
+    margin-bottom: 55px;
+}
+
+#anchr
+{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 230px;
+    background-color: rgb(250, 246, 31);
+    padding: 6px 14px;
+    border-radius: 15px;
+    border: 3px solid rgb(253, 122, 0);
+    box-shadow: -1px 1px 10px 8px rgba(0,0,0,0.41);
+}
+
+.div4
+{
+    width: 100%;
+    height: 750px;
+}
+
+#div4h
+{
+    font-size: 45px;
+    padding: 90px 40px;
+}
+
+#div4p
+{
+    padding-right: 1100px;
+    text-align: left;
+    font-weight: 200;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    float: left;
+    margin-top: -60px;
+    float: left;
+}
+
+#div4v
+{
+   
+    height: 320px;
+    float: right;
+    margin-right: 450px;
+    margin-top: -350px;
+}
