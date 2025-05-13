@@ -1,0 +1,59 @@
+.head
+{
+    text-align: center;
+    width: 400px;
+    background-color: aquamarine;
+    border: 2px solid red;
+}
+
+body
+{
+    background-color: rgba(237, 243, 173, 0.829);
+}
+
+.one
+{
+    background-color: aqua;
+    display:inline ;                /* inline element enpathal full width edukkathu nxt line ilirunthu start aagum*/
+}
+
+.one a
+{
+    background-color: rgb(216, 255, 43);
+    display: inline;
+    height: 600px;                    /* inline elementkku entha height width um work aagathu*/
+    width: 300px;
+}
+
+.two
+{
+    background-color: rgb(169, 124, 211);
+    display: inline;
+}
+m0
+.two a
+{
+    background-color: rgb(83, 231, 24);
+    height: 300px;
+    width: 900px;
+    display: inline-block;
+}
+
+.three
+{
+    background-color: rgb(223, 189, 56);
+}             
+
+.four
+{
+    background-color: rgb(59, 235, 24);
+    height: 300px;
+    width: 900px;
+    display: inline-block;
+}      
+
+.one p :hover
+{
+    display: inline;
+}
+
