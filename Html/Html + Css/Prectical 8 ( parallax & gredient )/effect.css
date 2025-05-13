@@ -1,0 +1,55 @@
+/*############################################################   Parallax Effect     ###########################################################################################################*/
+
+
+body
+{
+    margin: 0%;
+}
+.blue
+{
+    height: 350px;
+    border: 2px solid rgba(39, 24, 255, 0);
+    box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.75);
+}
+
+.white
+{
+    background-color: white;
+}
+
+h1{
+    color: yellow;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 3px 5px rgb(0, 0, 0);
+
+}
+
+/*############################################################   Gradent Effect     ###########################################################################################################*/
+
+.gra
+{
+    height: 400px;
+    background: linear-gradient(orange, red);
+}
+
+.gra1
+{
+    height: 400px;
+    background: linear-gradient(to top, orange, red);   /* to top entral red top il irukkum ; naam ethai mantion pannuhiromo athu final color kku apply aagum*/
+}
+
+.gra3
+{
+    height: 400px;
+    width: 400px;
+    background: radial-gradient(rgb(255, 255, 255), rgb(133, 141, 131) , black);   /* circle shape il irukkum*/
+    border-radius: 500px;
+    box-shadow: 2px 3px 10px rgb(0, 0, 0);
+}
+
+.gra2
+{
+    height: 400px;
+    background: linear-gradient(to top right, orange, red);   
+}
