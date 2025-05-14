@@ -1,0 +1,241 @@
+.one p
+{
+    font-size: 20px;
+    text-transform:capitalize;
+}
+
+.one li
+{
+    font-size: 2em;        /*em & % kku sub list(nested) kku athigamaana size kaatum  */
+}                          /* reason list kku 200% than but sub list il antha 200% ilirunthu puthithaga 200% count aagum */
+
+
+.two p
+{
+    font-size: 20px;
+}
+
+.two li
+{
+    font-size: 30px;       /* but pixel use pannal list & sub list kku ore size kattum. but pixels use panna mudiyathu*/
+}                          /* reason ovvoru device kkum ovvoru size kattum*/
+
+                           /* so ithu 2kkumaana solution rem use panna vendum ( font-size: 20rem; )*/
+
+
+/*########################################################################################################################################*/
+
+.chng
+{
+    font-size: 30px;
+}
+
+.a
+{
+    text-decoration:none;
+}
+.b
+{
+    text-decoration: underline;                  /*underline varum*/
+    line-height: 200px ;                         /*line ku idaiyilana gab varum*/
+}
+.c
+{
+    text-decoration: overline;              
+    word-spacing: 300px;                        /*word ku idaiyilana gab varum*/
+}
+
+span
+{
+    text-decoration: line-through;              /*vettiyathu pol varumm*/
+}
+
+.p
+{
+    text-indent: 80px;
+    letter-spacing: 9px;                       /*letter ku idaiyilana gab varum*/
+}
+
+ul span
+{
+    vertical-align: sub;               
+    text-decoration: none;
+}
+
+.do
+{
+    vertical-align: middle;
+    font-size: 70px;
+}
+
+.cls
+{
+    font-size: 40px;
+}
+
+.cls span
+{
+    text-decoration: none;
+}
+
+.mp
+{
+    font-size: 30px;
+}
+
+.mp::first-letter
+{
+    font-size: 3em;               /* 1st letter inai perithakka */
+}
+
+.mp4
+{
+    font-size: 30px;
+}
+
+.mp4::first-line
+{
+    font-size: 50px;
+    color: rgb(8, 221, 72);
+}
+
+/* ###############################################################################################*/
+
+.a :link
+{
+    color: rgb(225, 74, 255);      /*visit pannum mothal link intha color il kattum but some browser il than work aagum(firefox) */
+}
+
+a:visited
+{
+    color: rgb(243, 35, 35);      /* visit panniya pin antha color il kattum */
+}
+
+a:hover
+{
+    color: chartreuse;            /*mouse kondu varumpothu kattum */
+}
+
+a:active
+{
+    color: cyan;                  /* click pannikkondirukkum neraththil kattum */
+}
+
+.a:focus
+{
+    color: deeppink;              /* tap key kodukkumpothu focus aaga kattum */
+}
+
+h2
+{
+    text-align: center;
+}
+
+.op
+{
+    text-shadow: -2px 0px 0px rgb(43, 71, 0);      /* left shadow */
+}
+
+.op1
+{
+    text-shadow: 0px -2px 0px rgb(43, 71, 0);      /* right shadow */ 
+}
+
+.op2
+{
+    text-shadow: 0px -2px 0px rgb(43, 71, 0);       /* top shadow */
+}
+
+.op3
+{
+    text-shadow: 0px 2px 0px rgb(43, 71, 0);         /* bottom shadow */
+}
+
+.op4
+{
+    text-shadow: 0px 0px 10px rgb(43, 71, 0);         /* blur radius */
+}
+
+.op4
+{
+    text-shadow: 0px 0px 10px rgb(43, 71, 0);         /* blur radius */
+}
+
+.op5
+{
+    text-shadow: 3px 3px 5px red , -3px -3px 5px red;     /* ivvaru koduppathan moolam 4 puramum kodukkalam*/
+}
+
+
+/* 
+text-shadow: 4px 4px 2px rgba(0,0,0,0.6);                (text shadow kku 3 than varum)
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);          (but box shadow kku 4 varum 4 vathu Spread Radius enappadum)
+1st iruppathu left & right shadow, 2nd top & bottom ,3rd shadow blur
+*/
+
+/*###############################################################################################*/
+
+.brd
+{
+    width: 60%;
+    border-top-width: 5px;
+    border-right-width: 10px;
+    border-bottom-width: 15px;
+    border-left-width: 20px;
+
+    border-top-style: dashed;
+    border-right-style: solid;
+    border-bottom-style: double;
+    border-left-style:dotted;
+
+    border-top-color: blue;
+    border-right-color: green;
+    border-bottom-color: red;
+    border-left-color: black;
+
+    /*               OR                 */
+
+    border-color: blue green red black;         /* ivvarum short cut il kodukalam clock vice il suttrum. ithil virumpinal 2/3 color um kodukkalam */
+
+    border-style: dashed solid double dotted;              /* same like short cut */
+
+    border-width: 5px 10px 15px 20px;
+}
+
+.brd1 
+{
+    width: 50%;
+    border: 9px solid orangered;
+}
+
+.brd1 h2
+{
+    border: 5px solid rgb(17, 0, 255);
+    padding-top: 40px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    padding-left: 70px;
+
+    padding: 40px 50px 60px 70px;
+
+}
+
+.brd1 p
+{
+    border: 3px solid rgb(17, 0, 255);
+    height: 80px;
+}
+
+.inline
+{
+    font-size: 30px;
+}
+
+.inline a
+{
+    border: 2px solid brown;
+    padding: 10px;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+}
