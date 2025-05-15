@@ -1,0 +1,77 @@
+body
+{
+    background-image: url(../images/css\ image.png);             /* background: url(../images/css\ image.png) no-repeat fixed center;   ivvarum kodukkalam */
+    background-repeat: no-repeat;                          /* background-repeat: il repeat-x; /  repeat-y; / no repeat;  repeat; ivvaru 4 types undu*/
+    background-position:  50% 50%;                         /*  background-position: top left / top center /top right / center center or center /bottom left / bottom center / bottom right
+                                                            or percentage / pixels il kodukkalam => 1st vertical , 2nd harizontal*/
+    background-attachment: scroll;                          /* background kku enna position koduththirukkiromo athil fix aahikkollum ithu browser il center aahi kaanappadum body kku alla 
+                                                                but scroll koduththal moththa body in content kku center il fix aagum */
+    background-size: 500px;
+}
+
+/*######################################################################################*/
+
+.no
+{
+    list-style: none;
+}
+
+.disc
+{
+    list-style: disc;
+}
+
+.circle
+{
+    list-style: circle;
+}
+
+.squre
+{
+    list-style: square;
+}
+
+.decimal
+{
+    list-style: decimal;
+}
+
+.lead
+{
+    list-style: decimal-leading-zero;
+}
+
+.lower
+{
+    list-style: lower-alpha;
+}
+
+.upper
+{
+    list-style: upper-alpha;
+}
+
+.lroman
+{
+    list-style: lower-roman;
+}
+
+.uroman
+{
+    list-style: upper-roman;
+}
+
+/*##############################################################################################*/
+
+.icon li
+{
+    background-image: url(../images/icons8-linkedin-48.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 30px;
+    padding-left: 45px;
+    list-style-type: none;
+    line-height: 40px;
+    font-size: 30px;
+}
+
