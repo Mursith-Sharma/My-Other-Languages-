@@ -1,0 +1,29 @@
+.page
+{
+    margin: 0 auto;
+    width: 1850px;
+    border: 2px solid black;
+}
+
+.main
+{
+    width: 65%;
+    float: left;
+    margin-right: 5%;
+}
+
+.side
+{
+    width: 30%;                     /* width , width , margin right 3 um 100% kkul vara vendum */
+    float: right;
+}
+
+.footer
+{
+    clear: both;
+}
+
+.container
+{
+    background-color: rgb(143, 143, 3);
+}
