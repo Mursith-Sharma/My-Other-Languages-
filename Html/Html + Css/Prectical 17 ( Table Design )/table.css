@@ -1,0 +1,6 @@
+td
+{
+    border: 2px solid blue;
+    padding: 40px;
+    empty-cells: hide;
+}
