@@ -1,0 +1,20 @@
+div
+{
+    border: solid 4px red;
+    background-color: aqua;
+}
+
+div p
+{
+    margin: 0px;
+}
+
+img
+{
+    float: left;           /* conent inai Hydrojen vaayukkal ena eduththal athu mele sellum */
+}                         /* keelulla image ilum avvauthan contnt image kku arukil nirampa vedniya avasiyamillai ( Think Like a Monk )*/
+
+.br
+{
+    clear: both;          /* clear koduththal matra idaththil fill aagum (br )*/
+}
