@@ -1,0 +1,35 @@
+[title]                                       /* atribute call */
+{
+    color: rgb(68, 0, 255);                 /* title il iruppathai ivvaru full breaket use panni call panlam */
+    font-weight: bold;
+}
+
+[href^="https"]                              /* ivvarum call panlam href enum atribute udan athan value inai mantion panna vendum value ( ^ ) ivvaru mantion pannuvar*/
+{
+    color: brown;               
+}
+
+[target = "_blank"]                           /* ivvarum mantion panlam */
+{
+    color: rgb(238, 27, 220);    
+}
+
+img[alt*="image"]                              /* ivvaru iduvathan moolam alt atribute ilulla image enum word inai call panni changes panna mudium*/
+{                                             /* 3rd paragraph alt il "nice-image" ivvaru space illamal varuvathal athai ( *= ) ivvaru call pannuvom */
+    display: inline-block;
+    border: 5px solid orangered;
+}
+
+img[alt~="image"]                              /* 4th paragraph alt il "nice image" ivvaru space vittu varuvathal athai ( ~= ) ivvaru call pannuvom */
+{
+    display: inline-block;
+    border: 5px solid green;
+}
+
+a[href$=".png"]                                 /* ( . Dot ) ittu varuvathai athavthu document formet inai $ use panni call panlam */
+{
+    background: url(illustrator.png);
+    background-size: 40px;
+    background-position: left center;
+    color: rgb(175, 130, 218);
+}
