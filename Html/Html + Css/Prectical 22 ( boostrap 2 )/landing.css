@@ -1,0 +1,70 @@
+.red
+{
+    height: 400px;
+    background-color: rgb(204, 149, 149);
+    text-align: justify;
+}
+
+.blue
+{
+    height: 400px;
+    background-color: rgb(138, 138, 204);
+    text-align: justify;
+}
+
+.yellow
+{
+    height: 400px;
+    background-color: rgb(179, 179, 129);
+    text-align: justify;
+}
+
+.red h1
+{
+    text-align: center;
+}
+
+.blue h1
+{
+    text-align: center;
+}
+
+.yellow h1
+{
+    text-align: center;
+}
+
+/*###############################################################################*/
+
+.red1
+{
+    height: 400px;
+    background-color: rgb(204, 149, 149);
+}
+
+.blue1
+{
+    height: 400px;
+    background-color: rgb(138, 138, 204);
+}
+
+.red2
+{
+    height: 400px;
+    background-color: aqua;
+}
+.red3
+{
+    height: 400px;
+    background-color: fuchsia;
+}
+.red4
+{
+    height: 400px;
+    background-color: gray;
+}
+.red5
+{
+    height: 400px;
+    background-color: orange;
+}
