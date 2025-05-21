@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/path/to/parallax.js"></script>
+    <script src="parallax.js"></script>
+  </head>
+  <body>
+
+
+
+<nav class="navbar fixed-top navbar navbar-expand-lg navbar-dark bg-dark">
+
+<div class="container-fluid">
+    <!--  manu kkana code inai div tag create panni athatkul podavendum.2nd class="container-fluid" kodukka vendum. 3rd nav class inai copy panni antha div kku mele poda vendum
+          ivvaru seithal 2 side ilum siriya gab varum-->
+
+
+   
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Courses
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Software Developer</a>
+          <a class="dropdown-item" href="#">Network Administrator</a>
+          <a class="dropdown-item" href="#">Cybersecurity Analyst</a>
+          <a class="dropdown-item" href="#">Data Analyst / Data Scientist</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+         <!-- navbar end-->
+         <!-- slide start-->
+
+
+<div class="s">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+  <div class="carousel-inner meen">
+    <div class="carousel-item active">
+      <img src="images/cake.jpg" class="d-block w-100" alt="img1">
+    </div>
+
+    <div class="carousel-item">
+      <img src="images/image2.jpg" class="d-block w-100" alt="img2">
+    </div>
+
+    <div class="carousel-item">
+      <img src="images/mountain-9278324_1280.jpg" class="d-block w-100" alt="img3">
+    </div>
+
+  </div>
+
+ <button class="carousel-control-prev messi" type="button" data-target="#carouselExampleControls" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button class="carousel-control-next messi" type="button" data-target="#carouselExampleControls" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </button>
+</div>
+</div>
+
+
+<!-- slide end-->
+<!-- grid start ( 3 column) -->
+
+
+<div class="container-fluid actor">
+  <div class="row">
+
+
+
+    <div class="col-lg">                                                                                  <!-- default aaga irunthathu (class="col-sm")   sm = small ; lg = large -->
+
+      <img src="images/Thor.jpg" alt="actor1" class="rounded-circle animate__animated animate__pulse animate__delay-1s">   <!-- "rounded-circle" intha class use pannal image round shape il maarum ithu --> 
+      <h1 class="animate__animated animate__lightSpeedInLeft">Thor</h1>                                                    <!-- default aaha bootstrap il ullathu; animate__animated common aaha kodukka vendum-->
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus excepturi sit quisquam quod modi libero optio quidem dolores sapiente. Maiores ipsa non officiis sed eos molestias quam, perspiciatis distinctio dolorum qui, quas saepe. Aliquid nesciunt placeat obcaecati maiores fuga rerum, corrupti dignissimos deleniti totam accusamus consectetur ratione praesentium id dolore doloribus, nihil culpa quam at rem, alias sed laborum ipsa.</p>
+    </div>
+
+
+    <div class="col-lg">
+
+      <img src="images/marvel.jpg" alt="actor2" class="animate__animated animate__pulse animate__delay-1s">     <!-- time duration mantion panlam-->
+      <h1 class="animate__animated animate__fadeInUp">Loki</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus excepturi sit quisquam quod modi libero optio quidem dolores sapiente. Maiores ipsa non officiis sed eos molestias quam, perspiciatis distinctio dolorum qui, quas saepe. Aliquid nesciunt placeat obcaecati maiores fuga rerum, corrupti dignissimos deleniti totam accusamus consectetur ratione praesentium id dolore doloribus, nihil culpa quam at rem, alias sed laborum ipsa.</p>
+    </div>
+
+
+    <div class="col-lg">
+   
+      <img src="images/ironman.jpg" alt="actor3" class="animate__animated animate__pulse animate__delay-1s">
+      <h1 class="animate__animated animate__lightSpeedInRight">Tony</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus excepturi sit quisquam quod modi libero optio quidem dolores sapiente. Maiores ipsa non officiis sed eos molestias quam, perspiciatis distinctio dolorum qui, quas saepe. Aliquid nesciunt placeat obcaecati maiores fuga rerum, corrupti dignissimos deleniti totam accusamus consectetur ratione praesentium id dolore doloribus, nihil culpa quam at rem, alias sed laborum ipsa.</p>
+    </div>
+
+
+
+  </div>
+</div>
+
+<!-- grid end-->
+<!-- parallex start-->
+
+<div class="parallax-window alpha" data-parallax="scroll" data-image-src="images/windmill.png"><br>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum delectus ad sit dignissimos consectetur neque, accusantium quaerat deleniti repellendus possimus.</p>
+  <a href="#" class="btn btn-warning animate__animated animate__rubberBand btn2">Click Me</a>
+</div>
+
+<!-- last grid start-->
+
+
+<div class="container abcd">
+  <div class="row">
+    <div class="col-lg-7">
+      <h1>About Loki</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus illum quasi mollitia harum unde distinctio voluptatem architecto, neque nisi quidem ipsam voluptates quae repellendus sunt officiis facere deleniti accusantium voluptas in quod, beatae molestias totam ratione veritatis? Beatae impedit tempore ipsum in earum aliquid atque cumque eum eius rem voluptatibus autem quia placeat fuga animi quam dolore consectetur adipisci vitae non corporis, perspiciatis dignissimos! Maxime cum voluptas reprehenderit suscipit asperiores optio nisi, distinctio veniam? A corporis perferendis, consequuntur odit mollitia labore. Suscipit quod ratione deleniti illo veritatis consequatur aliquam beatae doloremque cupiditate? Consequatur nisi quia, blanditiis sit mollitia optio fugiat!</p>
+    </div>
+
+  <div class="col-lg-5">
+      <img src="images/marvel.jpg" alt="mok" height="100px" class="rounded-circle">
+    </div>
+
+
+  <div class="row">
+    <div class="col-lg-5">
+      <img src="images/marvel.jpg" alt="mok" height="100px" class="rounded-circle">
+    </div>
+
+  <div class="col-lg-7">
+      <h1>About Loki</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus illum quasi mollitia harum unde distinctio voluptatem architecto, neque nisi quidem ipsam voluptates quae repellendus sunt officiis facere deleniti accusantium voluptas in quod, beatae molestias totam ratione veritatis? Beatae impedit tempore ipsum in earum aliquid atque cumque eum eius rem voluptatibus autem quia placeat fuga animi quam dolore consectetur adipisci vitae non corporis, perspiciatis dignissimos! Maxime cum voluptas reprehenderit suscipit asperiores optio nisi, distinctio veniam? A corporis perferendis, consequuntur odit mollitia labore. Suscipit quod ratione deleniti illo veritatis consequatur aliquam beatae doloremque cupiditate? Consequatur nisi quia, blanditiis sit mollitia optio fugiat!</p>
+    </div>
+  </div>
+
+<br>
+
+
+<footer class="container">
+  <div>
+    <p>
+      SIT Web development  -2020 <a href="#">Terms  And Conditions</a>
+    </p>
+  </div>
+</footer>
+
+
+
+
+<br><br><br><br><br><br>
+
+
+
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
