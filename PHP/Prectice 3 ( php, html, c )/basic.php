@@ -2,7 +2,7 @@
 $j =10;
 $i =20;
 
-print($i+$j);                //php aanathu programming aahavum html aahavum work aagum
+print($i+$j);                //php aanathu programming aahavum html aahavum work aagum//
 $table = 11;
 $rows = 100;
 $i = 0;
@@ -30,6 +30,18 @@ $i = 0;
 
   <?php
   }
-  ?>
+  ?>  
+
+  
 
 </table>
+
+<?php
+$color = "red";
+echo "My car is  $color"."<br>";                 // echo for otput; $ for variable diclaration.
+echo "My house is $color " . "<br>";
+echo "My boat is $color" . "<br>";
+$x = 5;
+$y = 5;
+echo $x + $y;
+?> 
