@@ -38,3 +38,34 @@ MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USE
 DROP USER 'user'@'%';                                  --remove user
 
 ------------------------------------------------------------------------------------------------------
+
+USE mursith;
+CREATE TABLE employee(
+    epm_id int PRIMARY,                             -- ivvaru primary key koduththal not null kodukka thevaiyillai bcz it's primary key 
+    emp_name VARCHAR(30) not null,
+    emp_address varchar(50) NOT null,
+    salary decimal(5,2) not null
+    );
+
+------------------------------------------------------------------------------------------------------
+
+CREATE TABLE student_course (
+    student_id INT,
+    course_id INT,              
+    enrollment_date DATE,
+    PRIMARY KEY (student_id, course_id)             --compositive primary key ( 2um primary key aga payanpaduththalam )
+);
+
+------------------------------------------------------------------------------------------------------
+
+CREATE TABLE employee3(                        -- forign key enter 2 table inai connect pannum key. athavathu A table in primary key inai B table il connect pannal. antha B table il ulla key inai forign key enpom.
+    emp_id int NOT null,     
+    emp_name VARCHAR(30) not null,
+    emp_address varchar(50) NOT null,
+    salary decimal(5,2) not null,
+    deb_id int NOT null,                                        -- deb_id enpathu veroru table in primary key 
+    PRIMARY KEY (emp_id),                                       -- emp_id inai employee3 table il primary key aaha set pannal
+    FOREIGN KEY(deb_id) REFERENCES department(deb_id)           -- now employee3 table in primary key aanathu intha table il forign key aagum.
+    );                                                          -- athanai  REFERENCES department(deb_id) enpathu department enum table il ulla deb_id inai reference pannuthal
+                                                                -- ivvaru kodukka kaaranam veru table kalilum deb_id entru irukkalam athanalthan department enum table inai referens pannuhirom.
+
