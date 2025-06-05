@@ -26,3 +26,15 @@ CHARACTER (20) ;
 ------------------------------------------------------------------------------------------------------
 
 RENAME TABLE students_info to students_information;        --rename
+
+------------------------------------------------------------------------------------------------------
+
+CREATE USER 'user'@'%' IDENTIFIED WITH sha256_password BY '***';GRANT ALL PRIVILEGES ON *.* TO 'user'@'%' WITH GRANT OPTION;ALTER USER 'user'@'%' REQUIRE NONE WITH                     
+MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;CREATE DATABASE IF NOT EXISTS `user`;GRANT ALL PRIVILEGES ON `user`.* TO 
+'user'@'%';GRANT ALL PRIVILEGES ON `user\_%`.* TO 'user'@'%';
+                                                                            --add user account koduththal. ithai code panna vendiya avasiyamillai  gui il create pannal athuve code inai tharum
+------------------------------------------------------------------------------------------------------
+
+DROP USER 'user'@'%';                                  --remove user
+
+------------------------------------------------------------------------------------------------------
