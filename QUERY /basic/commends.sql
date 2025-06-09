@@ -13,6 +13,8 @@ CREATE TABLE students_info                         -- create table for database_
     PRIMARY KEY (st_id)
 );
 
+
+
 ------------------------------------------------------------------------------------------------------
 
 ALTER TABLE students_info                         -- ivvaru marupadium column add panna mudium
@@ -49,6 +51,11 @@ CREATE TABLE employee(
 
 ------------------------------------------------------------------------------------------------------
 
+ALTER TABLE department                               -- oru table kku puthithaga key add pannal
+ADD PRIMARY KEY (deb_id)
+    
+------------------------------------------------------------------------------------------------------
+
 CREATE TABLE student_course (
     student_id INT,
     course_id INT,              
@@ -58,7 +65,7 @@ CREATE TABLE student_course (
 
 ------------------------------------------------------------------------------------------------------
 
-CREATE TABLE employee3(                        -- forign key enter 2 table inai connect pannum key. athavathu A table in primary key inai B table il connect pannal. antha B table il ulla key inai forign key enpom.
+CREATE TABLE employee3(                        -- forign key entraal 2 table inai connect pannum key. athavathu A enum table in primary key inai employee3 table il connect pannal. antha A table il ulla primary key inai inge forign key enpom.
     emp_id int NOT null,     
     emp_name VARCHAR(30) not null,
     emp_address varchar(50) NOT null,
@@ -69,3 +76,30 @@ CREATE TABLE employee3(                        -- forign key enter 2 table inai 
     );                                                          -- athanai  REFERENCES department(deb_id) enpathu department enum table il ulla deb_id inai reference pannuthal
                                                                 -- ivvaru kodukka kaaranam veru table kalilum deb_id entru irukkalam athanalthan department enum table inai referens pannuhirom.
 
+|  deb_id | DNAME   |
+| ------- | ------- |                          
+| 1       | General |
+| 2       | Finance |                           -- department
+| 2       | Finance |
+| 3       | teach   |
+
+| emp_id |emp_nme| emp_id |                      -- employee9
+| ------ | ----- | ------ |
+| EMP001 | Ravi  |   2    |
+
+CREATE TABLE EMPLOYEE9 (                    
+emp_id int,
+emp_name VARCHAR(35) NOT NULL,
+address varchar(35),
+salary INTEGER DEFAULT 1,
+PRIMARY KEY (emp_id),
+FOREIGN KEY (deb_id) REFERENCES DEPARTMENT (deb_id)
+ ON DELETE SET null ON UPDATE CASCADE);
+
+department table il deb_id kkuriya ethavathu datad elete aaginal employee9 table ilulla emp_id kkuriya data il default aaha value 1 aaga varum ; athepola updata aahinal EMPLOYEE9 table il update aagum .
+
+
+EMPLOYEE2-இல் deb_id = 2 இருந்தது → அதை 1 (default value) ஆக மாற்றிவிடும்.
+FOREIGN KEY (deb_id) REFERENCES DEPARTMENT (deb_id)   ithil
+முதல் dept_id → இது தற்போதைய அட்டவணையின் (அதாவது Employee அட்டவணையின்) foreign key ஆகும் column.
+இரண்டாம் dept_id → இது reference ஆகும். Department அட்டவணையின் primary key column.
