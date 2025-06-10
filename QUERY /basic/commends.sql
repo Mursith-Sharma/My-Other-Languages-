@@ -4,7 +4,7 @@ DROP TABLE mursith;
 
 ------------------------------------------------------------------------------------------------------
 
-USE database_name;
+USE database_name;                               -- antha database il irunthal mantion panna thvaiyillai
 CREATE TABLE students_info                         -- create table for database_name
 (
     st_id integer NOT Null,                       -- keywords capital & small does'nt matter ( varchar, integer ,null ,..etc)
@@ -13,12 +13,44 @@ CREATE TABLE students_info                         -- create table for database_
     PRIMARY KEY (st_id)
 );
 
+------------------------------------------------------------------------------------------------------
 
+DROP TABLE table_name;                                -- table delete
+
+------------------------------------------------------------------------------------------------------
+ALTER TABLE employee2
+add COLUMN mna int;                                -- create column and delete column
+
+ALTER TABLE employee2
+drop COLUMN mna;
+
+------------------------------------------------------------------------------------------------------
+
+ALTER TABLE students_info                          
+MODIFY COLUMN st_name varchar(40);                   -- antha table ilulla column inai ivvaru edit panna mudium (data length )
+
+------------------------------------------------------------------------------------------------------
+
+ALTER TABLE students_info 
+CHANGE COLUMN st_name emp_name VARCHAR(40);           -- column rename method
+
+------------------------------------------------------------------------------------------------------
+
+RENAME TABLE students_info TO std_info;                 -- table rename method
+
+------------------------------------------------------------------------------------------------------
+
+ALTER TABLE students_info 
+MODIFY COLUMN emp_name INT;                         -- change  data type ( already varchar il irunthathu)
 
 ------------------------------------------------------------------------------------------------------
 
 ALTER TABLE students_info                         -- ivvaru marupadium column add panna mudium
 ADD st_mobile integer ;
+
+------------------------------------------------------------------------------------------------------
+
+ALTER TABLE students_info                         -- ivvaru delete panna mudium
 
 ------------------------------------------------------------------------------------------------------
 
