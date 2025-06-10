@@ -1,3 +1,6 @@
+
+-----------------------------------------------#################### DDL ( Data Definition Language ) #####################-------------------------------------------------------
+
 CREATE DATABASE mrsith;                           -- create and delete database
 DROP DATABASE mursith;
 DROP TABLE mursith;
@@ -135,3 +138,25 @@ EMPLOYEE2-இல் deb_id = 2 இருந்தது → அதை 1 (default
 FOREIGN KEY (deb_id) REFERENCES DEPARTMENT (deb_id)   ithil
 முதல் dept_id → இது தற்போதைய அட்டவணையின் (அதாவது Employee அட்டவணையின்) foreign key ஆகும் column.
 இரண்டாம் dept_id → இது reference ஆகும். Department அட்டவணையின் primary key column.
+
+
+
+----------------------------------------------########################   DML (data manipulation language) #######################--------------------------------------------------------
+
+INSERT INTO students_info VALUES (110, 'althaf', 'madurai ,120', 30000);                 -- students_info table il 4 volumn irunthal ivvaru  4 value kodukka mudium
+
+------------------------------------------------------------------------------------------------------
+
+INSERT INTO employee (emp_id , emp_name, emp_address, salary)                          -- ivvaru column inai mantion pannium value kodukkalam
+VALUES(11,'add','mdkfod:ads','231231');
+
+------------------------------------------------------------------------------------------------------
+
+INSERT INTO table_name (column1, column2, column3,...)                                -- ivvaru ore neraththil pala values kodukkalam
+VALUES
+ (value11, value12, value13,...),
+ (value21, value22, value23,...)
+ ...
+ (valuen1, valuen2, valuen3,...);
+
+------------------------------------------------------------------------------------------------------
