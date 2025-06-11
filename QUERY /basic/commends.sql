@@ -7,6 +7,10 @@ DROP TABLE mursith;
 
 ------------------------------------------------------------------------------------------------------
 
+SHOW TABLE STATUS LIKE 'employee';                 -- table inai view panna
+
+------------------------------------------------------------------------------------------------------
+
 USE database_name;                               -- antha database il irunthal mantion panna thvaiyillai
 CREATE TABLE students_info                         -- create table for database_name
 (
@@ -105,9 +109,9 @@ CREATE TABLE employee3(                        -- forign key entraal 2 table ina
     emp_name VARCHAR(30) not null,
     emp_address varchar(50) NOT null,
     salary decimal(5,2) not null,
-    deb_id int NOT null,                                        -- deb_id enpathu veroru table in primary key 
+    deb_id int NOT null,                                        -- deb_id enpathu department table in primary key 
     PRIMARY KEY (emp_id),                                       -- emp_id inai employee3 table il primary key aaha set pannal
-    FOREIGN KEY(deb_id) REFERENCES department(deb_id)           -- now employee3 table in primary key aanathu intha table il forign key aagum.
+    FOREIGN KEY(deb_id) REFERENCES department(deb_id)           -- now department table in primary key aanathu intha table il forign key aagum.
     );                                                          -- athanai  REFERENCES department(deb_id) enpathu department enum table il ulla deb_id inai reference pannuthal
                                                                 -- ivvaru kodukka kaaranam veru table kalilum deb_id entru irukkalam athanalthan department enum table inai referens pannuhirom.
 
@@ -152,6 +156,17 @@ VALUES(11,'add','mdkfod:ads','231231');
 
 ------------------------------------------------------------------------------------------------------
 
+DELETE FROM employee2
+WHERE emp_name = 'akkshan';                                                          -- இந்த query இயங்கிய பிறகு, emp_id = 113 உடைய பணி வரி நீக்கப்படும்.
+
+------------------------------------------------------------------------------------------------------
+
+UPDATE employee2
+SET emp_name = ''
+WHERE emp_name = 'akkshan';                                                           -- ivvaru particular name or id or etc delete panna mudium
+
+------------------------------------------------------------------------------------------------------
+
 INSERT INTO table_name (column1, column2, column3,...)                                -- ivvaru ore neraththil pala values kodukkalam
 VALUES
  (value11, value12, value13,...),
@@ -159,4 +174,23 @@ VALUES
  ...
  (valuen1, valuen2, valuen3,...);
 
+------------------------------------------------------------------------------------------------------
+
+UPDATE employee2
+SET salary = 45000.00                                                                -- akshan enpavarin salary inai update pannal
+WHERE emp_name = 'akshan';                                                           -- emp_name kku pathilaga emp_id use panlam
+
+UPDATE employee2
+SET salary = 950.00, emp_name ='akshan' ,emp_address ='mathurai , 112,ak road'          -- ivvaru pala data inai update panna mudium
+WHERE emp_id = 113;
+ 
+------------------------------------------------------------------------------------------------------
+Table Marge pannum murai                                                           -- Table Marge
+    
+INSERT IGNORE INTO employee1
+SELECT * FROM employee;
+    
+இரண்டு அட்டவணைகளிலும் ஒரே மாதிரியான பெயர்/ID பத்தி இருக்க வேண்டும்.
+உதாரணமாக: emp_id, student_id, product_id போன்றவை.
+emp_id இரண்டு tables-லுமே INT ஆக இருக்க வேண்டும் (same lik varchar ). but ivvaru irunthal proble illai table 1 il varchar(30)  : table 2 il varchar(50)
 ------------------------------------------------------------------------------------------------------
