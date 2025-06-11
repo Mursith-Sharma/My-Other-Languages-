@@ -237,4 +237,38 @@ SELECT * FROM employee;
 இரண்டு அட்டவணைகளிலும் ஒரே மாதிரியான பெயர்/ID பத்தி இருக்க வேண்டும்.
 உதாரணமாக: emp_id, student_id, product_id போன்றவை.
 emp_id இரண்டு tables-லுமே INT ஆக இருக்க வேண்டும் (same lik varchar ). but ivvaru irunthal proble illai table 1 il varchar(30)  : table 2 il varchar(50)
+-------------------------------------------- ###################### Basic SQL Data Retrieval ###################### ----------------------------------------------------------
+
+SELECT emp_id, emp_name                     -- salary 10000 kku metpattavarkalin id , name inai output eduththal
+FROM employee1
+WHERE SALARY >= 10000;
+
+------------------------------------------------------------------------------------------------------
+
+SELECT *
+FROM EMPLOYEE
+WHERE NOT DNO = 2 AND GENDER= ‘M’;
+
+GENDER = 'M' (ஆண்),
+DNO ≠ 2 (மற்றும் 2-ல் இல்லாத department)
+என்ற நபர்களின் முழு details வரும்.
+
+------------------------------------------------------------------------------------------------------
+
+ SELECT *
+ FROM employee1
+ WHERE emp_name LIKE 'a%';                  -- Finds any value that starts with "a"
+
+SELECT EMPNo, ENAME, SALARY
+FROM EMPLOYEE
+WHERE SALARY BETWEEN 51000.50 AND 98000;
+
+• WHERE EName LIKE '%a' - Finds any value that ends with "a"
+• WHERE EName LIKE '%ma%' - Finds any value that has "ma" in any position
+• WHERE EName LIKE '_a%' - Finds any value that has "a" in the second position
+• WHERE EName LIKE 's__%' - Finds any value that starts with "s" and is atleast 3 characters in length (2 underscore signs after "s")
+• WHERE EName LIKE 's%a' - Finds any value that starts with "s" and ends with "a"
+
+SELECT DISTINCT emp_name FROM employee1;            -- orepola name irunthal athil ontrai mattum kattum athavathu duplicate names irunthal athil ontru mattum output varum
+
 ------------------------------------------------------------------------------------------------------
