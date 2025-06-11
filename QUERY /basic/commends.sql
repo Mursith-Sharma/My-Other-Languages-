@@ -115,30 +115,74 @@ CREATE TABLE employee3(                        -- forign key entraal 2 table ina
     );                                                          -- athanai  REFERENCES department(deb_id) enpathu department enum table il ulla deb_id inai reference pannuthal
                                                                 -- ivvaru kodukka kaaranam veru table kalilum deb_id entru irukkalam athanalthan department enum table inai referens pannuhirom.
 
+--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 |  deb_id | DNAME   |
 | ------- | ------- |                          
-| 1       | General |
-| 2       | Finance |                           -- department
-| 2       | Finance |
-| 3       | teach   |
+| 1       |   HR    |
+| 2       |   IT    |                           -- department
+| 3       | Finance  
 
-| emp_id |emp_nme| emp_id |                      -- employee9
-| ------ | ----- | ------ |
-| EMP001 | Ravi  |   2    |
+| emp_id |emp_nme| dep_id | salary |                   -- employee
+| ------ | ----- | ------ | ------ |
+|  001   | Ravi  |   1    | 20000  |
+|  002   | raja  |   2    |30000.50|
+|  003   | pavi  |   2    | 40000  |
+|  004   | afra  |   3    | 40000  |
 
-CREATE TABLE EMPLOYEE9 (                    
-emp_id int,
-emp_name VARCHAR(35) NOT NULL,
-address varchar(35),
-salary INTEGER DEFAULT 1,
-PRIMARY KEY (emp_id),
-FOREIGN KEY (deb_id) REFERENCES DEPARTMENT (deb_id)
- ON DELETE SET null ON UPDATE CASCADE);
+-- Step 1: Department table
+CREATE TABLE department (
+    dep_id INT PRIMARY KEY,
+    dep_name VARCHAR(50)
+) ENGINE=InnoDB;
 
-department table il deb_id kkuriya ethavathu datad elete aaginal employee9 table ilulla emp_id kkuriya data il default aaha value 1 aaga varum ; athepola updata aahinal EMPLOYEE9 table il update aagum .
+-- Step 2: Employee table
+CREATE TABLE employee (
+    emp_id INT PRIMARY KEY,
+    emp_name VARCHAR(30),
+    salary DECIMAL(7,2),
+    dep_id INT,  -- NOT NULL இல்ல
+    FOREIGN KEY (dep_id) REFERENCES department(dep_id)
+    ON DELETE SET NULL
+    ON UPDATE CASCADE
+) ENGINE=InnoDB;
+
+-- Step 3: Insert department data
+INSERT INTO department (dep_id, dep_name) VALUES
+(1, 'HR'),
+(2, 'IT'),
+(3, 'Finance');
+
+-- Step 4: Insert employee data
+INSERT INTO employee (emp_id, emp_name, salary, dep_id) VALUES
+(001, 'Ravi', 50000.00, 1),
+(002, 'raja', 52000.50, 2),
+(003, 'pavi', 48000.75, 2),
+(004, 'afra', 51000.00, 3);
+
+-- Step 5: Delete department row
+DELETE FROM department WHERE dep_id = 2;
+
+-- Step 6: Check employee table
+SELECT * FROM employee;
+--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+department table il deb_id kkuriya ethavathu data delete aaginal employee table ilulla emp_id kkuriya data null aagum; athepola updata aahinal employee table il update aagum .
+
+CREATE TABLE EMPLOYEE1
+( EMPNO CHAR(9),
+ENAME VARCHAR(30) NOT NULL,
+BDATE DATE,
+DNO INTEGER DEFAULT 1,                                                -- ivvaru ongalukku pidiththa default valu kodukkalam
+PRIMARY KEY (EMPNO),
+FOREIGN KEY (DNO) REFERENCES DEPARTMENT (DNUMBER)
+ ON DELETE SET DAFAULT ON UPDATE CASCADE);
 
 
-EMPLOYEE2-இல் deb_id = 2 இருந்தது → அதை 1 (default value) ஆக மாற்றிவிடும்.
+department table il deb_id kkuriya ethavathu data delete aaginal employee table ilulla emp_id kkuriya data il default aaha value 1 aaga varum ; athepola updata aahinal employee table il update aagum .
+
+
+EMPLOYEE இல் deb_id = 2 இருந்தது → அதை 1 (default value) ஆக மாற்றிவிடும்.
 FOREIGN KEY (deb_id) REFERENCES DEPARTMENT (deb_id)   ithil
 முதல் dept_id → இது தற்போதைய அட்டவணையின் (அதாவது Employee அட்டவணையின்) foreign key ஆகும் column.
 இரண்டாம் dept_id → இது reference ஆகும். Department அட்டவணையின் primary key column.
