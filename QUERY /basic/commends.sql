@@ -272,3 +272,8 @@ WHERE SALARY BETWEEN 51000.50 AND 98000;
 SELECT DISTINCT emp_name FROM employee1;            -- orepola name irunthal athil ontrai mattum kattum athavathu duplicate names irunthal athil ontru mattum output varum
 
 ------------------------------------------------------------------------------------------------------
+
+CREATE USER 'new_user'@'localhost' IDENTIFIED BY                  -- create new user
+'user_password';
+
+------------------------------------------------------------------------------------------------------
