@@ -277,3 +277,5 @@ CREATE USER 'new_user'@'localhost' IDENTIFIED BY                  -- create new 
 'user_password';
 
 ------------------------------------------------------------------------------------------------------
+mysql -u root                                                      -- cmd il mysql kku ivvaru access panlam
+mariaDB & mysql ellame ontruthan                                   -- sandisk samsung pontra pendrive pontrathu 2 um database than
