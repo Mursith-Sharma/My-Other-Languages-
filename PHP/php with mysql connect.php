@@ -10,7 +10,7 @@
   }
 ?>
 
-###########################################################
+#################################################################################
 
 <?php
   $link = mysqli_connect("localhost", "root","");                    //php udan my sql connect panna (method 2)
@@ -24,7 +24,7 @@
   }
 ?>
 
-###########################################################
+####################################################################################
 
 
 <?php
@@ -36,7 +36,7 @@
   echo "connect successfully . host info:" . mysqli_get_host_info($link);
 ?>
 
-###########################################################
+#####################################################################################
 
 <?php
   $link = mysqli_connect("localhost", "root","");
@@ -49,7 +49,7 @@
   mysqli_close($link);                                                   //  close kodukka kaaranammysql connect aahivittatha enpathai kaattivittu connection inai udane close pannum //
 ?>                                                                       // but melulla function il close pannavillai . close paannamalirunthal sql injection adikka mudium will hack//
 
-###########################################################
+########################################################################################
 
 <?php
   $link = mysqli_connect("localhost", "root","");             //database create & connect  
@@ -65,6 +65,29 @@
 
   mysqli_close($link);
 
+?>
+
+#########################################################################################
+
+<?php
+  $link = mysqli_connect("localhost", "root","");
+  if($link === false)
+  {
+    // echo "connect success";
+    die("error : could not connct" . mysqli_connect_error());
+  }
+  echo "connect successfully<br>";
+
+  $sql ="CREATE DATABASE aamko";
+
+  $querycheck = mysqli_query($link ,$sql);
+  if($querycheck){                                // php inaium mysql inaium connect pannum oru api function (mysqli_query) , intha function use pannamalum run pannalam
+    echo "database created successfully";         //mysqli_query() வேலை செய்தால் → $querycheck = true                                               
+  }                                               //வேலை செய்யவில்லை → $querycheck = false
+  else{
+    echo "Fsiled" . mysqli_error($link);
+  }
+  mysqli_close($link);
 ?>
 
 
