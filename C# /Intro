@@ -1,0 +1,20 @@
+----------------------------------------------- ERROR Concept ------------------------------------------------------------
+program.cs
+simple.cs 
+இரண்டும் ஒரே folder/project-ல் இருக்கின்றன.
+ஒரு code-ஐ run பண்ணின பிறகு, இன்னொரு code-ஐ run பண்ண Mudiyathu.
+
+🔹 🔹🔹 Solution 1: இரண்டும் தனி project/folder ஆக பிரிக்கவும் 
+📁 Folder Structure:
+MyProjects/
+├── WebApiApp/                    --> contains program.cs (web app)
+│   └── WebApiApp.csproj
+│
+├── SimpleConsoleApp/             --> contains simple.cs (console app)
+│   └── SimpleConsoleApp.csproj
+
+
+🔹🔹🔹 Solution 1: இரண்டும் தனி project/folder ஆக பிரிக்கவும் 
+
+ஒரு code (program.cs) மட்டும் active-ஆ இருக்கட்டும்
+மற்ற code (simple.cs)-இல் உள்ள Main() method-ஐ comment பண்ணிவையுங்கள் -> //
