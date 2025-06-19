@@ -25,3 +25,34 @@ namespace alpha                // alpha என்ற பெயரில் names
     }
   }
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;                 //thease are library functionn
+
+namespace MyBasicconsoleapp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("HELLO WORld");                  🔸 Console.WriteLine(...) → newline உடன் அச்சிடும்
+            Console.WriteLine("HELLO WORld22");          
+            Console.Write("amithap");                          🔸 Console.Write(...) → அதே வரியில் தொடரும்
+            Console.Write("auncle");
+            Console.ReadKey();                                 🔸 Console.ReadKey() → ஒரு key-யை press செய்ய user-ஐ காத்திருக்கும் (otherwise console close ஆயிடும்)
+
+        }
+    }
+}
+
+output ---->>>>
+
+HELLO WORld
+HELLO WORld22
+amithapauncle
+
