@@ -131,3 +131,45 @@ namespace MyBasicconsoleapp
         }
     }
 }
+
+----------------------------------------------------------------------------------------------
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+  
+    static void Main(string[] args)
+    {
+      Console.WriteLine(MyMethod(3));
+    }
+    static int MyMethod(int x)
+    {
+      return 5 + x;
+    }
+
+  }
+}
+
+----------------------------------------------------------------------------------------------
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static int MyMethod(int x, int y)
+    {
+      return x + y;
+    }
+
+    static void Main(string[] args)
+    {
+      int z = MyMethod(5, 3);
+      Console.WriteLine(z);
+    }
+  }
+}
