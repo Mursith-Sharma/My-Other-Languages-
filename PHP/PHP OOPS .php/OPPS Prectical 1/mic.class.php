@@ -6,14 +6,14 @@
 
 class mic
 {
-    public $brand;
+    public $Brands;
     public $color;
     public $name;
     public $price;
 
     public function setbrand($brand){
         print($brand);
-        print($this->brand);                  
+        print($this->Brands);                  
     }
 
 }
