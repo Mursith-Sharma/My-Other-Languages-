@@ -18,3 +18,7 @@ class mic
 
 }
 ?>
+<!--  
+Website il naam 50 mic kalai list panna vendum. ovvoru mic brand & color & name & price diffrent.
+structured programming use panni ithatku code pannuvathayin ovvontrukkum thani thani code elutha vendum. it's too long. athai thavirkkave oops concept use pannukirom. & scurity puporse also
+-->
