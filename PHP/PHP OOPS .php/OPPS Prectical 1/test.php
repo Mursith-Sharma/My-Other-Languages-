@@ -16,6 +16,32 @@ $mic2->setbrand("samsung ");
 
 ?>
 <!-- 
+
+         mic (class)        இந்த class-ஐ கொண்டு நாம் 2 object உருவாக்கியுள்ளோம்:
+       ┌───────────────┐
+       │ brand         │
+       │ color         │
+       │ name          │
+       │ price         │
+       │ setbrand()    │
+       └───────────────┘
+
+
+             mic1
+      ┌───────────────┐
+      │ brand = sonic │  ← mic1->brand
+      │ name = earboot│  ← mic1->name
+      │ light = null  │
+      └───────────────┘
+
+             mic2
+      ┌────────────────┐
+      │ brand = null   │
+      │ name = headset │  ← mic2->name
+      └────────────────┘
+
+
+
  ithil print or printf or echo moontrum use panlam
  இது mic.class.php file-ல் உள்ள functions, variables, or classes மறுபடியும் load ஆக முயற்சி செய்யும்.
 அதனால் fatal error வரும்:
