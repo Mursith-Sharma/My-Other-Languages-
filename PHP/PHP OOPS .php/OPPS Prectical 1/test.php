@@ -16,32 +16,74 @@ $mic2->setbrand("samsung ");
 
 ?>
 
-<!-- 
+<!--   best explain php oops part 2
 
-         mic (class)        இந்த class-ஐ கொண்டு நாம் 2 object உருவாக்கியுள்ளோம்:
-       ┌───────────────┐
-       │ brand         │
-       │ color         │
-       │ name          │
-       │ price         │
-       │ setbrand()    │
-       └───────────────┘
+1. Class Structure (mic.class.php)
++---------------------+
+|       Class: mic    |
++---------------------+
+| - Brands (public)   |
+| - color (public)    |
+| - name (public)     |
+| - price (public)    |
++---------------------+
+| + setbrand($brand)  |
+|   - Prints $brand   |
+|   - Prints $this->  |
+|     Brands          |
++---------------------+
 
+2. Object Instances and Flow (test.php)
++---------------+               +---------------+
+|   $mic1       |               |   $mic2       |
++---------------+               +---------------+
+| name = "earboot" |            | name = "headset" |
+| Brands = "sonic" |            | Brands = ""      |
++---------------+               +---------------+
 
-             mic1
-      ┌───────────────┐
-      │ brand = sonic │  ← mic1->brand
-      │ name = earboot│  ← mic1->name
-      │ light = null  │
-      └───────────────┘
+33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
 
-             mic2
-      ┌────────────────┐
-      │ brand = null   │
-      │ name = headset │  ← mic2->name
-      └────────────────┘
+1. Create objects:
 
+$mic1 = new mic()
+$mic2 = new mic()
 
+2. Create objects:
+$mic1 ────> name = "earboot "
+$mic2 ────> name = "headset "
+
+3. Set names:
+printf($mic1->name) → Output: "earboot "
+printf($mic2->name) → Output: "headset "
+
+4. Set Brands and call setbrand():
+$mic1:
+- Brands = "sonic "
+- setbrand("apple ") → Prints:
+  * "apple " (parameter)
+  * "sonic " (Brands property)
+
+$mic2:
+- Brands not set (empty)
+- setbrand("samsung ") → Prints:
+  * "samsung " (parameter)
+  * "" (empty Brands)
+
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+Visual Representation:
+
++-----------+     +-----------+
+|  $mic1    |     |  $mic2    |
++-----------+     +-----------+
+| name      |     | name      |
+| "earboot" |     | "headset" |
+| Brands    |     | Brands    |
+| "sonic"   |     | ""        |
++-----------+     +-----------+
+     ↓                  ↓
+"apple sonic"      "samsung "
+
+000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 
  ithil print or printf or echo moontrum use panlam
  இது mic.class.php file-ல் உள்ள functions, variables, or classes மறுபடியும் load ஆக முயற்சி செய்யும்.
