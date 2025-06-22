@@ -8,13 +8,14 @@ $mic1 -> name = "earboot ";
 $mic2 -> name = "headset ";
 
 printf($mic1->name);                         
-printf($mic2->name);
+printf($mic2->name);                            // apple sonic samsung
 
-$mic1->brand = "sonic ";
+$mic1->Brands = "sonic ";
 $mic1->setbrand("apple ");
 $mic2->setbrand("samsung ");
 
 ?>
+
 <!-- 
 
          mic (class)        இந்த class-ஐ கொண்டு நாம் 2 object உருவாக்கியுள்ளோம்:
