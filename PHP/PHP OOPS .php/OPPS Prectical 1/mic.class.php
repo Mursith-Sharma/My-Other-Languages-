@@ -13,7 +13,7 @@ class mic
 
     public function setbrand($brand){
         print($brand);
-        print($this->Brands);                  
+        print($this->Brands);                 // test.php il mic1 entru sonnal this enpathu mic1 aaha maarum, mic2 entral this enpathu mic2 aaga marum. multiple function code pannuvathai avoid panna use pannukirom. 
     }
 
 }
