@@ -10,6 +10,9 @@ Object	class-இல் இருந்து உருவான நிஜம் 
 Method	ஒரு object செய்யும் செயல்கள் — like .start(), .stop()
 Property/Field	ஒரு object-ன் data — like color, speed
 
+Car என்பது class → அது ஒரு design மாதிரி மாத்திரம்.
+Supra மற்றும் Ferrari என்பது அந்த design-ஐ வைத்து உருவாக்கப்பட்ட உண்மையான வாகனங்கள் (objects).
+
 +-----------------------------+
 |      Supra (Object)         |
 |     Instance of Car class   |
