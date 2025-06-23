@@ -10,16 +10,32 @@ Object	class-இல் இருந்து உருவான நிஜம் 
 Method	ஒரு object செய்யும் செயல்கள் — like .start(), .stop()
 Property/Field	ஒரு object-ன் data — like color, speed
 
-+-----------------------+
-|       Car (Class)     |
-+-----------------------+
-| ● Properties          |
-|   - Wheels            |
-|   - Engine            |
-|   - Breaks            |
-|                       |
-| ○ Functions           |
-|   - Driving()         |
-|   - Change direction()|
-|   - increase speed()  |
-+-----------------------+
++-----------------------------+
+|      Supra (Object)         |
+|     Instance of Car class   |
++-----------------------------+
+| 🔸 Property Values          |
+|   - Wheels: 4               |
+|   - Engine: "Electric"      |
+|   - Breaks: "Regenerative"  |
+|                             |
+| 🔹 Function Access          |
+|   - Driving()               |
+|   - ChangeDirection()       |
+|   - IncreaseSpeed()         |
++-----------------------------+
+
++-----------------------------+
+|      Ferrari (Object)       |
+|     Instance of Car class   |
++-----------------------------+
+| 🔸 Property Values          |
+|   - Wheels: 4               |
+|   - Engine: "Petrol"        |
+|   - Breaks: "Disc"          |
+|                             |
+| 🔹 Function Access         |
+|   - Driving()               |
+|   - ChangeDirection()       |
+|   - IncreaseSpeed()         |
++-----------------------------+
