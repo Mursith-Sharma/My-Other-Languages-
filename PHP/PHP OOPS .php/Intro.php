@@ -9,3 +9,17 @@ Class	ஒரு design (template) — Example: Car என்று வகை
 Object	class-இல் இருந்து உருவான நிஜம் — Example: myCar, yourCar
 Method	ஒரு object செய்யும் செயல்கள் — like .start(), .stop()
 Property/Field	ஒரு object-ன் data — like color, speed
+
++-----------------------+
+|       Car (Enum)      |
++-----------------------+
+| ● Properties          |
+|   - Wheels            |
+|   - Engine            |
+|   - Breaks            |
+|                       |
+| ○ Functions           |
+|   - Drivinge()        |
+|   - Change direction  |
+|   - increase speed    |
++-----------------------+
