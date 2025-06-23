@@ -11,7 +11,7 @@ Method	ஒரு object செய்யும் செயல்கள் — li
 Property/Field	ஒரு object-ன் data — like color, speed
 
 +-----------------------+
-|       Car (Enum)      |
+|       Car (Class)     |
 +-----------------------+
 | ● Properties          |
 |   - Wheels            |
