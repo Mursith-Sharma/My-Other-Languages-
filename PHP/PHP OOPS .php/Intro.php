@@ -19,7 +19,7 @@ Property/Field	ஒரு object-ன் data — like color, speed
 |   - Breaks            |
 |                       |
 | ○ Functions           |
-|   - Drivinge()        |
-|   - Change direction  |
-|   - increase speed    |
+|   - Driving()         |
+|   - Change direction()|
+|   - increase speed()  |
 +-----------------------+
