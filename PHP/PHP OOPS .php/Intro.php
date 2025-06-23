@@ -13,16 +13,19 @@ Property/Field	ஒரு object-ன் data — like color, speed
 Car என்பது class → அது ஒரு design மாதிரி மாத்திரம்.
 Supra மற்றும் Ferrari என்பது அந்த design-ஐ வைத்து உருவாக்கப்பட்ட உண்மையான வாகனங்கள் (objects).
 
+Function-கள் (அதாவது Method-கள்) பொதுவாக இருக்கும்
+ஆனால் Property-கள் (அதாவது value-கள்) வேறுபடலாம்
+
 +-----------------------------+
 |      Supra (Object)         |
-|     Instance of Car class   |
+| make object using class car |
 +-----------------------------+
-| 🔸 Property Values          |
+| 🔸 Property (Values)        |
 |   - Wheels: 4               |
 |   - Engine: "Electric"      |
 |   - Breaks: "Regenerative"  |
 |                             |
-| 🔹 Function Access          |
+| 🔹 Method (Function)        |
 |   - Driving()               |
 |   - ChangeDirection()       |
 |   - IncreaseSpeed()         |
@@ -30,15 +33,24 @@ Supra மற்றும் Ferrari என்பது அந்த design-ஐ �
 
 +-----------------------------+
 |      Ferrari (Object)       |
-|     Instance of Car class   |
+| make object using class car |
 +-----------------------------+
-| 🔸 Property Values          |
+| 🔸 Property (Values)        |
 |   - Wheels: 4               |
 |   - Engine: "Petrol"        |
 |   - Breaks: "Disc"          |
 |                             |
-| 🔹 Function Access         |
+| 🔹 Method (Function)        |
 |   - Driving()               |
 |   - ChangeDirection()       |
 |   - IncreaseSpeed()         |
 +-----------------------------+
+🧠 இதை OOPS terms-ல சொன்னால்:
+
+🔁 Functions (Methods) → Shared (Same for all objects)
+எல்லா object-க்கும் ஒரே function-ஐ பயன்படுத்தலாம்.
+அதாவது, function code ஒருமுறை class-ல் எழுதினாலே போதும்.
+
+🔄 Properties (Variables/Values) → Different for each object
+ஒவ்வொரு object-க்கும் தனிப்பட்ட values இருக்கலாம்.
+அதாவது brand, model, engine, price எல்லாம் object-க்கு object-ஆக மாறலாம்.
