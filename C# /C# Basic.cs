@@ -26,6 +26,7 @@ namespace alpha                             // alpha என்ற பெயர�
 
 /*
 🔸 static என்றால்:
+class kku veliyilirunthu variable oh function oh create pannuvathayin static use pannuvom ( in java )
 இந்த method-ஐ object உருவாக்காமல் நேரடியாக class-இல் இருந்து அழைக்க முடியும்.
 C# program ஒன்று run ஆகும்போது, compiler class-இன் object உருவாக்கமாட்டது.
 அதனால், Main method static ஆக இருக்க வேண்டும்.
