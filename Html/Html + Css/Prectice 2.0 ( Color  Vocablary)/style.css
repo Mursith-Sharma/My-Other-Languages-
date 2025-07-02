@@ -1,0 +1,32 @@
+img
+{
+    height: 200px;
+    width: 200px;
+}
+
+.roja
+{
+    color: red;
+    font-weight: normal;
+}
+
+.azul
+{
+    color: blue;
+    font-weight: normal;
+}
+.anaroja
+{
+    color: orange;
+    font-weight: normal;
+}
+.yellow
+{
+    color: yellow;
+    font-weight: normal;
+}
+.green
+{
+    color: rgb(4, 99, 36);
+    font-weight: normal;
+}
