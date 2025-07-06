@@ -23,5 +23,12 @@ benifits
 | ஒவ்வொரு பக்கத்திலும் ஒரே head/footer மீண்டும் எழுதவேண்டும்      | ஒரே `master.blade.php` file-ல் common content                     |
 | மாற்றம் செய்ய சிக்கல்                                                | ஒரு இடத்தில் மாற்றினால் அனைத்து பக்கங்களுக்கும் பொருந்தும் |
 | Code பெரியது & duplicate                                              | Code சின்னது & organized                                           |
- 
+
+
+Every files Locaation -->
+app\Http\Controllers      -->>  Poscontroller.php
+public                    -->>  style.css
+resources\views           -->>  index & detail.blade.php
+resources\views\layout    -->>  style.css
+routes                    -->>  web.php
 -->
