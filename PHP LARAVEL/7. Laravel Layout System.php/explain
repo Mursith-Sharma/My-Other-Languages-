@@ -1,0 +1,27 @@
+<!--  ✅ Laravel Layout System
+ஆம், @yield('box')-ஐ master.blade.php-ல் வேண்டிய இடத்தில் இடலாம் —
+
+இந்த கோப்பில் @yield('box') என்று ஒரு இடம் இருக்கு.
+அந்த இடத்தில் child பக்கம் (ex: index.blade.php) இருந்து வரும் உள்ளடக்கம் inject ஆகும்.
+
+Laravel index.blade.php-ஐ load பண்ணும் போது,
+அது @extends('master') மூலமா master layout-ஐ கொண்டு வருது.
+
+@section('box')-ல உள்ள content,
+master.blade.php-ல உள்ள @yield('content') இடத்தில் merge ஆகுது.
+
+| File                  | பங்கு                                          |
+| --------------------- | ---------------------------------------------- |
+| `master.blade.php`    | Layout template – common header/footer/sidebar |
+| `index.blade.php`     | Child view – content-only                      |
+| `@yield('content')`   | placeholder for dynamic content                |
+| `@section('content')` | fills the above placeholder                    |
+
+benifits
+| Layout இல்லாமல்                                                       | Layout system உடன்                                               |
+| ----------------------------------------------------------              | ----------------------------------------------------------          |
+| ஒவ்வொரு பக்கத்திலும் ஒரே head/footer மீண்டும் எழுதவேண்டும்      | ஒரே `master.blade.php` file-ல் common content                     |
+| மாற்றம் செய்ய சிக்கல்                                                | ஒரு இடத்தில் மாற்றினால் அனைத்து பக்கங்களுக்கும் பொருந்தும் |
+| Code பெரியது & duplicate                                              | Code சின்னது & organized                                           |
+ 
+-->
