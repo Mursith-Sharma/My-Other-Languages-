@@ -84,3 +84,34 @@ full code below-------------------
 naam inimel antha code il function use panna koodathu athu wrong athatku pathilaga controller use panna vendum
 so open new terminal in your visual ->  php artisan make:controller poscontroller           //poscontroller enpathu ungal controller in name
 after -> develop\LARAVEL\blog\app\Http\Controllers\poscontroller.php] created successfully. entru path kattum antha poscontroller file inai open pannavum
+
+---------------- controller.php ( poscontroller.php for logic) --------------------------------
+
+<?php                                               
+                                                   
+namespace App\Http\Controllers;                    
+
+use Illuminate\Http\Request;                       
+                                                   
+class Poscontroller extends Controller        
+            
+{
+
+    public function sigma($id){                                            // intha id il naam url il type pannuvathai vangum
+        return "<h1> service Page with parameter: ".$id."<h1>".             //  string-களை (வாக்கியங்களை) இணைக்க Dot. பயன்படுத்தப்படுது.(already learnde php)
+        "<h4> this is new url -->>"."http://127.0.0.1:8000/post/".$id."<h4>";     
+    }                      
+                                                     // நீங்கள் $id எப்படினு பெயர் வைக்குறீங்க — அதில் $ இருக்கணும், ஏனெனில் அது PHP variable.                       
+}                                                    // $name = "Mursith";✅ name = "Mursith";❌
+
+---------------- web.php ( for routing) --------------------------------
+
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Poscontroller;                    //இது Laravel-க்கு, "Poscontroller" என்ற class எங்க இருக்குது?" என்று சொல்றது.
+
+
+Route::get('/post/{id}',[Poscontroller::class, 'sigma']);   
+                                                   // {id} ida kaaranam naam url il post/ kku pirahu type pannuvathai controler il  $id aanathu variable il semiththu output aaga kattum
+?>
