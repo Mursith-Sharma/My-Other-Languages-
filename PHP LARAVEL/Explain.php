@@ -16,6 +16,7 @@ php laraval
 15. after visual cmd ->> php artisan migrate -> enter yes
 16. neengal (composer run dev) visual cmd il ittal athil link kidaikkum. virumpiya neraththil opne panlam
 
+))))  visual il laravel kkaha ( Laravel Extra Intellisense , PHP IntelliSense ) enum extention install pannungal
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
