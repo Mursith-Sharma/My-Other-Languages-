@@ -3,5 +3,5 @@
 
     <div class="container-fluid ">
         </div>
-        
-@endsection
+                                              <!-- section inai end panna vendum -->
+@endsection                                
