@@ -49,9 +49,9 @@ https://github.com/jvlcode/bootstrap-blog-templates/blob/main/detail.html
 
 index.html matrum detail.html il ithai change pannavum -->>
  biginner way ->> <link rel="stylesheet" href="('style.css')">     stranderd way ->>    <link rel="stylesheet" href="{{url('style.css')}}">
-{{ asset('something') }} → Laravel இதை browser-க்கு URL போல மாற்றி தரும்.
-→ இது browser-ல் --->>>>    http://127.0.0.1:8000/style.css
+{{ asset('something') }} → Laravel இதை browser-க்கு URL போல மாற்றி தரும். → இது browser-ல் --->>>>    http://127.0.0.1:8000/style.css
 ithu public folder il irunthal maththiram ithu work aagum
+public folder il sub folder il irunthal ivvaru varum --> <link rel="stylesheet" href="{{url('css/style.css')}}
 
 
 
