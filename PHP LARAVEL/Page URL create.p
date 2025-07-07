@@ -15,3 +15,29 @@ Route::get('/sample', [Poscontroller::class, 'sample']);
 <a href="{{ route('sample') }}">Read More</a>
 
 🔹 Step 6: Server run செய்யவும------------------------------------------------------------------்
+
+
+------------------------------------------------------------------்------------------------- Explain -----------------------------------------்------------------------------------------------------------------்
+
+2))))
+sample() என்ற method ஒரு view-ஐ return பண்ணுகிறது.
+view('sample') → resources/views/sample.blade.php என்ற கோப்பை load பண்ணும்.
+
+3))))
+Route::get('/sample', ...) → URL /sample என்றால் எந்த Controller-ஐ call பண்ணணும் என்பதைக் காட்டுகிறது.
+[Poscontroller::class, 'sample'] → Poscontroller-இன் sample() method-ஐ call பண்ணும்.
+
+4))))
+URL result ->>  http://127.0.0.1:8000/sample
+
+<a href="{{ url('/sample') }}">Read More</a>
+இது நேரடியாக /sample என்ற URL-ஐ pointing பண்ணும்.                            <-- neradiyaga use pannal ithu pothum.
+Route::get('/sample', [Poscontroller::class, 'sample']);
+
+ஆனால் route name பயன்படுத்துவது Laravel வழியில் சிறந்தது.
+<a href="{{ route('sample') }}">Read More</a>
+Route::get('/sample', [Poscontroller::class, 'sample'])->name('sample');             <-- route use pannal athatkana name mantion pannavendum 
+
+
+
+.
