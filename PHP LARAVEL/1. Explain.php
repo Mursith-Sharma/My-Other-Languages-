@@ -18,6 +18,7 @@ php laraval
 
 ))))  visual il laravel kkaha ( Laravel Extra Intellisense , PHP IntelliSense ) enum extention install pannungal
 ))))   code il perumpalana errorkal commend pannuvathal varum so maximum avoid commend
+))))  server i adikkadi run panna intha 2 commend use pannalam --> php artisan serve  or -->> composer run dev
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
