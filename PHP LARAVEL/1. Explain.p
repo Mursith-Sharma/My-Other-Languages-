@@ -5,7 +5,7 @@ php laraval
 3. athil ellavatrin version parka mudium like -> php -v , composer -v Laravel
 4. go to Laravel folder , click path, type cmd, after cmd kku varum
 5. cmd il Which starter kit would you like to install? none , database kku sql kodukkavum, Default database updated. Would you like to run the default database migrations? no ( after we will fix )
-6. Would you like to run npm install and npm run build? no ( after we will fix ) <- ithatku node js install pannanum
+6. Would you like to run npm install and npm run build? none ( after we will fix ) <- ithatku node js install pannanum
 8. after go to your Laravel folder anha folder inai visuals studio il open pannu
 9. athil env file irukkum -> athil db entru ullathil database connection and password matra mudium ( must check )
 10. open terminal type this ->> npm install && npm run build	after ->> composer run dev ( server, queue worker, and Vite development server ivatrai start pannuvatathatku)
