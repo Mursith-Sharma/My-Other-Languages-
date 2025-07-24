@@ -2,4 +2,20 @@
 
 2. open that html file in any browser -> inspect -> console -:> after show your code output (bzs programming language inai html pola browser il view panna mudiyathu)
 
-3. 
+let box = "web development";
+
+console.log(box);
+console.log(box);
+console.log(box);
+console.log(box);
+// 4 times web developmen entru print aagum
+
+//////////////////////////////////////////////////////////////////////////////////
+
+let first_name = 'albert';                   // variable declaration
+let last_name = ' instien';
+const final_name = ' baahupali';
+console.log(first_name + last_name + final_name);
+
+//let vs const kkumidaiyilaana diffrent let koduththu variable create pannal overight panna mudium but const koduththal overight pana mudiyathu
+
