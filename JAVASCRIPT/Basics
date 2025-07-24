@@ -10,12 +10,5 @@ console.log(box);
 console.log(box);
 // 4 times web developmen entru print aagum
 
-//////////////////////////////////////////////////////////////////////////////////
 
-let first_name = 'albert';                   // variable declaration
-let last_name = ' instien';
-const final_name = ' baahupali';
-console.log(first_name + last_name + final_name);
-
-//let vs const kkumidaiyilaana diffrent let koduththu variable create pannal overight panna mudium but const koduththal overight pana mudiyathu
 
