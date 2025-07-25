@@ -78,4 +78,34 @@ else
     console.log("i don't know who you are");
 }
 
-//////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////// if else and operator////////////////////////////////////////////////////
+
+//netflix il moview parkkavendumaayin athil login panniyirukka vendum & subscription pannirukka vendum athatkaana if else
+
+//netflix il moview parkkavendumaayin athil login panniyirukka vendum & subscription pannirukka vendum athatkaana if else
+
+let logged = true;
+let subscription = true;
+
+if(logged && subscription){
+    console.log('watch all videos');
+}
+
+else{
+    console.log('buy now');
+}
+
+////////////////////////////////////// if else or operator////////////////////////////////////////////////////
+
+// watch 1st 10 movies (login or subscribe pannirukkanum )
+
+let login = true;
+let subscribe = false;
+
+if(login || subscribe){
+    console.log('watch all videos');
+}
+
+else{
+    console.log('do login or subscribe');
+}
