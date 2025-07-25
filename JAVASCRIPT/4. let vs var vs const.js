@@ -28,3 +28,14 @@ if(true){
 
 //  condition il "var" use pannal athai veliyeum use pannalam
 // ore var name inai palamurai use panna mudium (if condition il)
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let come = 'hi';
+let go = 233;
+let hi = true;
+
+// let inai ivvarum poda mudium
+let come = 'hi'; go = 233; hi = true;
+
+keywords :-  let, true, const, var,false, etc... 
+idintifier :- come, go, hi, man_wield, $man, etc...come
