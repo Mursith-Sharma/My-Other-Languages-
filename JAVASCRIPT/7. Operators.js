@@ -49,3 +49,17 @@ console.log(marks);      // answer = 10
 let text = 'Javascript';
 console.log('hello ' + text + '! ' + 404);            // ithil operator aanathu number inai string aaga matrum
 console.log(200 - 'dob');                             // NAN output varum (not a number)
+
+console.log(10<30);            // true
+console.log(40<30);            // false
+console.log(16 >= 15);         //true
+console.log(16 >= 16);         //true
+console.log(16 == 16);         //true
+console.log(16 != 16);         //false
+
+console.log(16 == '16');       //true       en number inaium string inaium equal entru solkirathu:- bcz relational operator string inai number aaga convert pannum
+console.log(16 != '16');       //false
+
+console.log(16 === '16');       //false     so data convertion aagamal irukkka java il extra aaha = poduvom
+console.log(16 !== '16');       //false
+
