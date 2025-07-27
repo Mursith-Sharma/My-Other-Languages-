@@ -25,3 +25,18 @@ let fullname = function(fname, lname){
 
 let firstname = 'mohamed';
 console.log(fullname(firstname,'hassan'));
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+let hero = ['hulk','SPIDER','loki','marvel','thor'];
+
+console.log(hero.find(function(value)                   
+{  
+     console.log(value.toLowerCase() === 'spider'.toLowerCase)           
+} 
+))                                          //oruvar spider entru search pannal ivvaru match aagum and tolower koduththal capital il search pannalum lower convert aahi match aagum
+                                            // 'SPider' → 'spider', 'spider' → 'spider'
+console.log(hero)                           //ஒரு array-யிலிருந்து வந்த value (example: 'SPider')  மற்றொரு fixed value (example: 'spider') so ithanal 2 times tolowercase use pannukirom
+
+////////////////////////////////////////////////////////////////////////////////////////
+
