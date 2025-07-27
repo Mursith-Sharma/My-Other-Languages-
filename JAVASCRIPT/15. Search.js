@@ -15,3 +15,13 @@ console.log(hero.find(function(value)
 //match aahinal true um match aagavittal false um kattum
 // 'hulk'.toLowerCase() === 'spider' → 'hulk' === 'spider' → false
 // 'SPider'.toLowerCase() === 'spider' → 'spider' === 'spider' → ✅ true
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+let fullname = function(fname, lname){
+     return `hllo ${fname} ${lname}`
+};
+
+let firstname = 'mohamed';
+console.log(fullname(firstname,'hassan'));
