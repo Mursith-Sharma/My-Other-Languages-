@@ -54,6 +54,13 @@ let normal = document.querySelector('p').textContent = 'hello everyone'    // wa
 let normal = document.querySelectorAll('p')                              // change all p tag content
 normal.forEach((war) => {
    war.textContent = 'changed using foreach in js'
+
+
+/////////////////////////// external aaga java il irunthu eppadi element create pannuvathu ////////////////////////////
+
+let newtag = document.createElement('p')                                                            // create your element :- p or h1 or span oe etc...
+document.querySelector('body').appendChild(newtag).textContent='change successully';                       // antha element ethanudaiya child entru mantion panna vendum?
+
 })
 ///////////////////////////////////////////////////////
 
