@@ -37,3 +37,23 @@ let normal = document.querySelectorAll('p')
 console.log(normal)                                                     // querySelectorAll use pannal all p tag inaium kaattum
 
 ///////////////////////////////////////////////////////
+
+
+
+let normal = document.querySelector('p')               // 1st ilulla p tag content change aahum
+console.log(normal)                                                    
+normal.textContent = 'hello everyone'                                      //way 1
+
+/////////////////////////////////////////////////////
+
+let normal = document.querySelector('p').textContent = 'hello everyone'    // way 2
+
+///////////////////////////////////////////////////////
+
+
+let normal = document.querySelectorAll('p')                              // change all p tag content
+normal.forEach((war) => {
+   war.textContent = 'changed using foreach in js'
+})
+///////////////////////////////////////////////////////
+
