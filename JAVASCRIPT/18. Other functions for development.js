@@ -17,3 +17,38 @@ let converter = (doller) => {                    // user eththanai doller idukir
 console.log(converter(3))
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let converter = (doller) => {                 
+    if (typeof doller === 'number'){
+        return doller * 185
+    }
+    else{
+        throw Error('please enter number')                // number kku pahilaaga string input pannal error msg show aaga vendum
+    }
+}
+console.log(converter('dsdf'));
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let converter = (doller) => {                   
+   return doller * 300
+}
+
+try {                                   // correct way for error:- try & catch bcz error aaha yarum type pannal error msg show aagathu sariyaga type pannal mattum work aagum
+    console.log(converter(5))
+}   catch (error){
+
+}
+
+/////////////////////////////////////////////// final code ////////////////////////////////////////////////////////////
+
+let converter = (doller) => {                   
+   return doller * 300
+}
+
+try {                                   // e mean error. u can use any letter or word
+    console.log(converter(5))
+}   catch (e)
+{
+   console.log(e)
+}
