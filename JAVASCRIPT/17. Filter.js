@@ -59,4 +59,50 @@ let find = today.filter(function(value){                       // value il ovvor
 console.log(find)
 
 /////////////////////////////////// true aanathai mattum print panna vendum ////////////////////////////////////////
+// Method 1
 
+let today = [{
+    title : 'prayer',
+    isdone : true,
+},
+{
+    title : 'go to gym',
+    isdone : false,
+},
+{
+    title : 'play game',
+    isdone : false,
+},
+{
+    title : 'eat',
+    isdone : true,
+}];
+
+let find = today.filter((value) =>{                       
+    return value.isdone == true;                 // true aanathai matum kattum. & true false kku console inai payanpaduththamal return payanpaduththa vendum
+}
+)
+console.log(find)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// Method 2 
+
+let today = [{
+    title : 'prayer',
+    isdone : true,
+},
+{
+    title : 'go to gym',
+    isdone : false,
+},
+{
+    title : 'play game',
+    isdone : false,
+},
+{
+    title : 'eat',
+    isdone : true,
+}];
+
+let find = today.filter((value) => value.isdone == true);                 // true aanathai matum kattum. & true false kku console inai payanpaduththamal return payanpaduththa vendum
+console.log(find)
