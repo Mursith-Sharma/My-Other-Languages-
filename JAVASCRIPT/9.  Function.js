@@ -55,3 +55,22 @@ function add(num1 , num2){                              // login form il 1st & l
 }
 
 add(20+30/2 , 60);   
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let bye = function(total){
+    return(`bye ${total}`)
+};
+console.log(bye('ihsan'));
+
+//////////////////////////// advanced way use arrow ///////////////////////////////
+
+let hello = (total) => {
+    return(`bye ${total}`)               // mostly programmers function kku pathilaaha arrow mark => use pannuvar 2 um same work than pannum
+};
+console.log(hello('ihsan'));
+
+/////////////////////////////// single line using arrow //////////////////////////////////////
+
+let hi = (total) =>`bye ${total}`;           // simple function kku ithu use pannalam
+console.log(hi('ihsan'));
