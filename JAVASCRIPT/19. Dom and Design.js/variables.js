@@ -96,4 +96,46 @@ document.querySelector('.both').addEventListener('click',(messi)=>{
     document.querySelector('#done').textContent = 'before to after'               // you can change both ( change content & button name)
 })
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+document.querySelector('#search').addEventListener('input',(event)=>{             // search pannumpothu every word inaium track panni athatkuriya result search il tharum. like google pola
+     console.log(event)
+})
+
+///////////////////////////////////// Best method for search ///////////////////////////////////////////////
+
+document.querySelector('#search').addEventListener('input',(event)=>{             // search pannumpothu every word inaium track panni athatkuriya result search il tharum. like google pola
+     console.log(event.target.value)
+})
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+function just(){
+    let mine = document.querySelector('#view').value;                             // search pannumpothu database ilirunthu varuvathu pola varum
+    console.log(mine)
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+function vayathu(){                   
+    let ageValue = document.querySelector('#age').value;                         // 18 - 35 age vayahukku ulla  age mattum input vanga vendum
+    if( 18<=ageValue && ageValue<=35 ){
+     console.log(ageValue);
+    }
+    else{
+     console.log('invalid age');
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+function dom(){                   
+    let myValue = document.querySelector('.raa').value;                         // browser il output kattum method
+    if(myValue=='neymar' || myValue=='messi' ){
+     document.querySelector('.classOne').textContent = 'you only earch thease 2 words'
+    }
+    else{
+     console.log(myValue);
+    }
+}
