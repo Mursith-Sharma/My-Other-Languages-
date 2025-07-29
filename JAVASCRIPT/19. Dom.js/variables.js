@@ -64,3 +64,36 @@ document.querySelector('body').appendChild(newtag).textContent='change successul
 })
 ///////////////////////////////////////////////////////
 
+
+document.querySelector('button').addEventListener('click',()=>{                   // button click pannumpothu addeventlisnter update aagum
+
+    console.log('button is clicked')
+})                                                                                // body is (dom). & button is (html tag). click is (event name)
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+document.querySelector('#card').addEventListener('click',(any)=>{                 // buyer somthing product bye ppanna pirahu paid entru varum. before like after liked
+    any.target.textContent = 'paid'
+})                                               
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+document.querySelector('.change').addEventListener('click',()=>{                  // after click we can change anything like p tag content
+    document.querySelector('p').textContent = 'change using button'               // way 1
+})                                               
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+document.querySelector('.change').addEventListener('click',(messi)=>{             // way 2
+    let ptag = document.querySelector('p')  
+    ptag.textContent = 'change by method'
+})
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+document.querySelector('.both').addEventListener('click',(messi)=>{  
+    messi.target.textContent = 'after',
+    document.querySelector('#done').textContent = 'before to after'               // you can change both ( change content & button name)
+})
+
+
