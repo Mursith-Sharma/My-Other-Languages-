@@ -139,3 +139,26 @@ function dom(){
      console.log(myValue);
     }
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+function color(){
+     let mydesign = document.querySelector('body')              // when i click color button you can change bg color
+     mydesign.style.background = 'yellow'                       // you can input id or class name in querySelector
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function header(){
+     let myhead = document.querySelector('h1')              // when i click color button you can change bg color
+     myhead.style.background = 'blue'                       // you can input color code
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function added(){                                                  // html il ul kkul li create pannal
+     let orderList = document.querySelector('ul')
+     let newLi = document.createElement('li')                    // just li create
+     newLi.textContent = 'three'                                 // create pannum newLi kku oru content iduthal 
+     orderList.appendChild(newLi)                                // ul kkul antha li inai paste panna ul in child inai mantion panna vendum
+}
