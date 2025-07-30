@@ -1,0 +1,43 @@
+body{
+    background-color: #57C785;
+    font-family: "Cascadia Mono", sans-serif; 
+}
+
+.container{
+    margin: 0 auto;
+    margin-top: 25rem;
+    width: 20%;
+}
+
+.p{
+    width: 100%;
+    font-size: 2.8rem;
+    text-align: center;
+    color: rgb(73, 44, 0);
+    margin-bottom: 20px;
+    background-color: rgb(220, 233, 45);
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.mybtn{
+    width: 60%;
+    margin-left: 22%;
+    margin-top: 6%;
+    background-color: rgb(141, 9, 158);
+    font-size: 18px;
+    color: rgb(220, 233, 45);
+}
+
+.ln{
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 2px;
+    background-color: rgb(71, 236, 168);
+}
+
+.ll{
+    margin-left: 4rem;
+}
