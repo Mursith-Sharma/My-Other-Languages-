@@ -1,0 +1,11 @@
+.added{
+    color :brown;
+    font-weight: 700;
+    background-color: aqua;
+}
+
+.rmdir{
+    color :rgb(60, 212, 29);
+    font-weight: 700;
+    background-color: aquamarine;
+}
