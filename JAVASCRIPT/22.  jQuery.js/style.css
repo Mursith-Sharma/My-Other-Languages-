@@ -1,0 +1,29 @@
+.added{
+    color :brown;
+    font-weight: 700;
+    background-color: aqua;
+}
+
+.rmdir{
+    color :rgb(60, 212, 29);
+    font-weight: 700;
+    background-color: aquamarine;
+}
+
+.one{
+    height: 100px;
+    background: orange;
+    margin: 20px;
+}
+.two{
+    height: 30px;
+    background: rgb(49, 20, 211);
+    margin: 30px;
+}
+
+.three{
+    height: 15px;
+    background: rgb(11, 206, 53);
+    margin: 20px;
+}
+
