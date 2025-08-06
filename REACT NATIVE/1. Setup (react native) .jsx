@@ -22,3 +22,8 @@ athai 2um check panna cmd il ( node -v & npm -v )
 9. now neenal cmd il host inai run panna thevaiyillai, so go to vs terminal, npm run dev , error vanthal run this => Set-ExecutionPolicy RemoteSigned -Scope CurrentUser , npm run dev. done
 
 10. public folder il html,css files irukkum, app.jsx file il your host url il irukkum interface kkana code irukkkum you can edit, main.jsx: App.jsx-ஐ DOM-ல் render செய்யும் (React-ன் entry point).
+
+11. vs code il new project create pannuvathu eppadi? 1. npx create-expo-app MyNewApp 2. cd MyNewApp 3. npx expo start
+
+12. athil qr code varum athai mobile il exp go install panni scan seithal varum. matrum androd simualator softwar install pannal live aaha pc il parkka mudium
+
