@@ -1,3 +1,16 @@
+-------------------------------------- Php - Mysql Database Connectivity -------------------------------------------
+Three - Tier Architecture
+01. Presentation tier (browser)
+02. Logial tier
+⦁	web server ( apache, iis, etc...)
+⦁	programming language (java, c, c#, etc..)
+⦁	scripting language ( php, perl, etc..)
+⦁	application framework ( ruby, bootstrap, etc..)
+
+03. Data tier
+⦁	Dbms ( oracle, MySQL, mongodb, MariaDB, etc...)
+  
+
 <?php
   $link = mysqli_connect("localhost", "root","");                   //php udan my sql connect panna (method 1)
   if($link == true)
