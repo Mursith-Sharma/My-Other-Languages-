@@ -17,6 +17,13 @@ Three - Tier Architecture
 
 * while the PDO extention is more portable and supports more than twelve diffrent database , mysqli, extension as the name suggests ( watch php 16 video )
 
+----------------------------------------------------------------------------------------------
+
+???????????????????  API ? ???????????????????????????
+software innoru software udan or programming innoru programming udan pesuvathatku payanpaduvathu
+
+----------------------------------------------------------------------------------------------
+
 <?php
   $link = mysqli_connect("localhost", "root","");                   //php udan my sql connect panna (method 1)
   if($link == true)
