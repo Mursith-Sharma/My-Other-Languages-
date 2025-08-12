@@ -22,7 +22,25 @@ Three - Tier Architecture
 ???????????????????  API ? ???????????????????????????
 software innoru software udan or programming innoru programming udan pesuvathatku payanpaduvathu
 
+-------------------------------------  3 way to connect php with mysql ------------------------
+
+1. Procedural Way            $conn = mysqli_connect($servername, $username, $password, $dbname);
+2. OOPS ->                   $conn = new mysqli($servername, $username, $password, $dbname);
+3. PDO Way                   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+
 ----------------------------------------------------------------------------------------------
+
+MySqli    =>     இது ஒரு PHP Extension — PHP code-ல் இருந்து MySQL database-ஐ connect செய்து, query execute செய்ய உதவும் கருவி.
+PDO       =>     PDO என்பது PHP-வில் database-களை connect செய்து, query-களை பாதுகாப்பாக மற்றும் எளிதாக இயக்க உதவும் ஒரு ஒரு abstraction layer ஆகும்.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+அம்சம்                                            	PDO (PHP Data Objects)                                                                                 	MySQLi (MySQL Improved)
+
+Database Support         	பலவிதமான databases-ஐ support செய்கிறது (MySQL, PostgreSQL, SQLite, MSSQL, Oracle, மற்றவை)                        	MySQL மற்றும் MariaDB மட்டும் support செய்கிறது
+API Style	                Object-Oriented API	                                                                                                        Object-Oriented மற்றும் Procedural இரண்டுமே உள்ளது
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <?php
   $link = mysqli_connect("localhost", "root","");                   //php udan my sql connect panna (method 1)
