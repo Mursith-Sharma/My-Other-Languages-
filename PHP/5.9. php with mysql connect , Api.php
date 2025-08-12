@@ -9,7 +9,13 @@ Three - Tier Architecture
 
 03. Data tier
 ⦁	Dbms ( oracle, MySQL, mongodb, MariaDB, etc...)
-  
+
+---------------------------------------  php conect to mysql server -----------------------------------------------
+* PHP ofers two difrent ways to connect to mysql
+1. mysqli ( improved mysql )
+2.PDO ( php data object ) extention
+
+* while the PDO extention is more portable and supports more than twelve diffrent database , mysqli, extension as the name suggests ( watch php 16 video )
 
 <?php
   $link = mysqli_connect("localhost", "root","");                   //php udan my sql connect panna (method 1)
