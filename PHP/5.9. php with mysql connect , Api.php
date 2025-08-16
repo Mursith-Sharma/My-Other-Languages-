@@ -43,8 +43,8 @@ API Style	                Object-Oriented API	                                  
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 <?php
-  $link = mysqli_connect("localhost", "root","");                   //php udan my sql connect panna (method 1)
-  if($link == true)
+  $link = mysqli_connect("localhost", "root","");                   //php udan my sql connect panna (method 1) Procedural Way 
+  if($link == true)                                                 // ip address irunthal ip localhost kku pathilagan idalam
   {
      echo "connect success";
   }
@@ -54,13 +54,13 @@ API Style	                Object-Oriented API	                                  
   }
 ?>
 
-#################################################################################
+#################################################################################                                          1. Connect pannal
 
 <?php
   $link = mysqli_connect("localhost", "root","");                    //php udan my sql connect panna (method 2)
   if($link == true)
   {
-    die("error : could not connct" . mysqli_connect_error());
+    die("error : could not connct" . mysqli_connect_error());        // die function use panna reason-> "Connection failed: <reason>" என்று print பண்ணி script stop ஆகிடும்.
   }
   else 
   {
@@ -91,7 +91,7 @@ API Style	                Object-Oriented API	                                  
   }
   echo "connect successfully . host info:" . mysqli_get_host_info($link);
   mysqli_close($link);                                                   //  close kodukka kaaranammysql connect aahivittatha enpathai kaattivittu connection inai udane close pannum //
-?>                                                                       // but melulla function il close pannavillai . close paannamalirunthal sql injection adikka mudium will hack//
+?>                                                                       <!-- but melulla function il close pannavillai . close paannamalirunthal sql injection adikka mudium will hack-->
 
 ########################################################################################
 
