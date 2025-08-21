@@ -132,35 +132,35 @@ pin naam eppothu call pannukiromo appothuthan namakku output varum
                                                         Biggest Advantage Of Function
 
 ///////////////////////////////////////////////////////
-let a = 4.4;
-let b = 5.6;
+let a = 4;
+let b = 5;
 
 // a + b
 let sum1 = a + b;
-console.log("answer: " + sum1);
+console.log(sum1);     //////////////
 
 let c = 10;
 let d = 20;                                            // WITHOUT FUNCTION
 
 // c + d
 let sum2 = c + d;
-console.log("answer: " + sum2);
+console.log(sum2);    ///////////////
 
-let e = 1.5;
-let f = 2.5;
+let e = 1;
+let f = 2;
 
 // e + f
 let sum3 = e + f;
-console.log("answer: " + sum3);
+console.log(sum3);   ///////////////
 
 ///////////////////////////////////////////////////////
 
 function addNumbers(x, y) {
-    console.log("answer: " + (x + y));
+    console.log(x + y);
 }
                                                          // WITH FUNCTION
-addNumbers(4.4, 5.6);
+addNumbers(4, 5);
 addNumbers(10, 20);
-addNumbers(1.5, 2.5);
+addNumbers(1, 2);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
